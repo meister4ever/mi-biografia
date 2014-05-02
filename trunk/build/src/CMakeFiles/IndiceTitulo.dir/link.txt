@@ -1,2 +1,0 @@
-/usr/bin/ar cr libIndiceTitulo.a  CMakeFiles/IndiceTitulo.dir/indiceTitulo.cpp.o
-/usr/bin/ranlib libIndiceTitulo.a

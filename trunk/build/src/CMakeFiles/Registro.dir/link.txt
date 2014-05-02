@@ -1,2 +1,0 @@
-/usr/bin/ar cr libRegistro.a  CMakeFiles/Registro.dir/registro.cpp.o
-/usr/bin/ranlib libRegistro.a

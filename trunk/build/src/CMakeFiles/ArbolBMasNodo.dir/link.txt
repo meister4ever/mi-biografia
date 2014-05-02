@@ -1,2 +1,0 @@
-/usr/bin/ar cr libArbolBMasNodo.a  CMakeFiles/ArbolBMasNodo.dir/arbolBMasNodo.cpp.o
-/usr/bin/ranlib libArbolBMasNodo.a

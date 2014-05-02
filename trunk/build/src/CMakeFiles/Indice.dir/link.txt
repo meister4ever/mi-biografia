@@ -1,2 +1,0 @@
-/usr/bin/ar cr libIndice.a  CMakeFiles/Indice.dir/indice.cpp.o
-/usr/bin/ranlib libIndice.a

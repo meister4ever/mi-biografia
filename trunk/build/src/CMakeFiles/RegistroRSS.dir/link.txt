@@ -1,2 +1,0 @@
-/usr/bin/ar cr libRegistroRSS.a  CMakeFiles/RegistroRSS.dir/registroRSS.cpp.o
-/usr/bin/ranlib libRegistroRSS.a

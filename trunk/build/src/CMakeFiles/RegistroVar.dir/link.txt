@@ -1,2 +1,0 @@
-/usr/bin/ar cr libRegistroVar.a  CMakeFiles/RegistroVar.dir/registroVar.cpp.o
-/usr/bin/ranlib libRegistroVar.a

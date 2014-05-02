@@ -1,2 +1,0 @@
-/usr/bin/ar cr libArbolB.a  CMakeFiles/ArbolB.dir/arbolB.cpp.o
-/usr/bin/ranlib libArbolB.a

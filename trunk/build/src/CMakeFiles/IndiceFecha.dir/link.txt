@@ -1,2 +1,0 @@
-/usr/bin/ar cr libIndiceFecha.a  CMakeFiles/IndiceFecha.dir/indiceFecha.cpp.o
-/usr/bin/ranlib libIndiceFecha.a

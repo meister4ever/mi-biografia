@@ -1,2 +1,0 @@
-/usr/bin/ar cr libArchivoBloques.a  CMakeFiles/ArchivoBloques.dir/archivoBloques.cpp.o
-/usr/bin/ranlib libArchivoBloques.a

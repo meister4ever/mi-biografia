@@ -1,2 +1,0 @@
-/usr/bin/ar cr libRegistroTWT.a  CMakeFiles/RegistroTWT.dir/registroTWT.cpp.o
-/usr/bin/ranlib libRegistroTWT.a

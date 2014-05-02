@@ -1,2 +1,0 @@
-/usr/bin/ar cr libParserRSS.a  CMakeFiles/ParserRSS.dir/parserRSS.cpp.o
-/usr/bin/ranlib libParserRSS.a

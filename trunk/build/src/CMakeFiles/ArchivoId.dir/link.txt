@@ -1,2 +1,0 @@
-/usr/bin/ar cr libArchivoId.a  CMakeFiles/ArchivoId.dir/archivoId.cpp.o
-/usr/bin/ranlib libArchivoId.a

@@ -1,2 +1,0 @@
-/usr/bin/ar cr libHashExt.a  CMakeFiles/HashExt.dir/hashExt.cpp.o
-/usr/bin/ranlib libHashExt.a
