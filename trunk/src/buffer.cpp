@@ -6,6 +6,10 @@
 
 #include "buffer.h"
 
+Buffer::Buffer()
+{
+
+}
 
 void Buffer::liberar()
 {

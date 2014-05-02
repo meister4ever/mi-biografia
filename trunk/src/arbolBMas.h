@@ -8,7 +8,6 @@
 #include <assert.h>
 
 #include "arbolBMasNodo.h"
-#include "archivoId.h"
 
 class ArbolBMas
 {
@@ -16,7 +15,6 @@ private:
 	ArbolBMasNodo raiz;
 	int altura;
 	int cantidadNodos;
-	ArchivoId archivoId;
 	ArbolBMasNodo arbolBMasNodo;
 
 public:

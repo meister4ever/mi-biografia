@@ -1,0 +1,2 @@
+/usr/bin/ar cr libIndiceAutor.a  CMakeFiles/IndiceAutor.dir/indiceAutor.cpp.o
+/usr/bin/ranlib libIndiceAutor.a

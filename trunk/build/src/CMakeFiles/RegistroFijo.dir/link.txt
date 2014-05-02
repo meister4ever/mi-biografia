@@ -1,0 +1,2 @@
+/usr/bin/ar cr libRegistroFijo.a  CMakeFiles/RegistroFijo.dir/registroFijo.cpp.o
+/usr/bin/ranlib libRegistroFijo.a

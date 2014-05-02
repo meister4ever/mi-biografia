@@ -8,21 +8,26 @@
 #include <assert.h>
 
 #include "registro.h"
-#include "buffer.h"
 
 
 class RegistroFijo : public Registro
 {
 private:
-	int identificador;
+	std::string identificador;
 	bool ocupado;
-	Buffer buffer;
 
 protected:
 	int longitud;
 
 public:
+    RegistroFijo(std::string id, bool ocupado, int longitud);
+    ~RegistroFijo();
 	bool escribir();
+
+	std::string getIdentificador();
+    bool estaOcupado();
+    int getLongitud();
+
 };
 
 

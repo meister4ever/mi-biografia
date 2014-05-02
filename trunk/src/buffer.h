@@ -7,20 +7,16 @@
 #include <iostream>
 #include <assert.h>
 
-#include "archivoBloques.h"
-#include "archivo.h"
-
 
 class Buffer
 {
 private:
 	int tamanioBuffer;
-	ArchivoBloques archivoBloques;
-	Archivo archivo;
 
 private:
 	void liberar();
 public:
+    Buffer();
 	void leer();
 	void obtenerBloque();
 	void escribir();

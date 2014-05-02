@@ -1,0 +1,2 @@
+/usr/bin/ar cr libSerializable.a  CMakeFiles/Serializable.dir/serializable.cpp.o
+/usr/bin/ranlib libSerializable.a

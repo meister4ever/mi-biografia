@@ -7,3 +7,6 @@
 #include "archivoBloques.h"
 
 
+ArchivoBloques::ArchivoBloques()
+{
+}

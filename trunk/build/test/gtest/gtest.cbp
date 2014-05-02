@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="gtest" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\test\;CMake Files\test\gtest\;CMake Files\test\gtest\cmake\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gtest">
+         <Option output="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/libgtest.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest" />
+            <Add directory="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/c++/4.7/x86_64-suse-linux" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/../../../../x86_64-suse-linux/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 gtest" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gtest/fast">
+         <Option output="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/libgtest.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest" />
+            <Add directory="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/c++/4.7/x86_64-suse-linux" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/../../../../x86_64-suse-linux/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 gtest/fast" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gtest_main">
+         <Option output="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest" />
+            <Add directory="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/c++/4.7/x86_64-suse-linux" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/../../../../x86_64-suse-linux/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 gtest_main" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gtest_main/fast">
+         <Option output="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest" />
+            <Add directory="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/c++/4.7/x86_64-suse-linux" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/../../../../x86_64-suse-linux/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/build/test/gtest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest/src/gtest-all.cc">
+      </Unit>
+      <Unit filename="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest/src/gtest_main.cc">
+      </Unit>
+      <Unit filename="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+      <Unit filename="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/src/BioConfig.h.in">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+      <Unit filename="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\" />
+      </Unit>
+      <Unit filename="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\gtest\" />
+      </Unit>
+      <Unit filename="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\gtest\" />
+      </Unit>
+      <Unit filename="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest/cmake/internal_utils.cmake">
+          <Option virtualFolder="CMake Files\test\gtest\cmake\" />
+      </Unit>
+      <Unit filename="/home/nacho/Documentos/Desarrollo/TP1/TP1temp/mi-biografia/test/gtest/cmake/internal_utils.cmake">
+          <Option virtualFolder="CMake Files\test\gtest\cmake\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

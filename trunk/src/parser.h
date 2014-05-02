@@ -7,13 +7,11 @@
 #include <iostream>
 #include <assert.h>
 
-#include "archivoBloques.h"
 
 
 class Parser
 {
 private:
-	ArchivoBloques archivoBloques;
 
 public:
 	virtual void extraerTitulo()=0;

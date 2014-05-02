@@ -6,12 +6,13 @@
 #include <list>
 #include <iostream>
 #include <assert.h>
+#include "registro.h"
 
 class ArbolBMasNodo
 {
 private:
-	std::string claves;
-	int registros;
+	std::list<Registro> registros;
+	std::list<ArbolBMasNodo> hijos;
 };
 
 #endif

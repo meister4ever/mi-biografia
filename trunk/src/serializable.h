@@ -13,7 +13,7 @@
 class Serializable
 {
 private:
-	Buffer buffer;
+	Buffer *buffer;
 
 public:
 	virtual void leerObjeto()=0;

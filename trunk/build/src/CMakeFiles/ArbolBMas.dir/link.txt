@@ -1,0 +1,2 @@
+/usr/bin/ar cr libArbolBMas.a  CMakeFiles/ArbolBMas.dir/arbolBMas.cpp.o
+/usr/bin/ranlib libArbolBMas.a

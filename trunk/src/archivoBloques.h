@@ -19,6 +19,8 @@ private:
 	int posPrimerReg;
 	std::list<Bloque> bloquesLibres;
 
+public:
+    ArchivoBloques();
 };
 
 #endif

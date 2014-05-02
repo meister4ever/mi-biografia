@@ -1,0 +1,2 @@
+/usr/bin/ar cr libBloque.a  CMakeFiles/Bloque.dir/bloque.cpp.o
+/usr/bin/ranlib libBloque.a

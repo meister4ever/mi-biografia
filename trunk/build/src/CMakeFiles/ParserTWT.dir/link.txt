@@ -1,0 +1,2 @@
+/usr/bin/ar cr libParserTWT.a  CMakeFiles/ParserTWT.dir/parserTWT.cpp.o
+/usr/bin/ranlib libParserTWT.a

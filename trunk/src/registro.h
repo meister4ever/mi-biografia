@@ -13,8 +13,10 @@
 
 class Registro : public HashExt
 {
-private:
-	ArchivoBloques archivoBloques;
+
+public:
+    Registro();
+
 };
 
 #endif

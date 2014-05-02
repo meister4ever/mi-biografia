@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/MiBiografia.dir/bio.cpp.o  -o MiBiografia -rdynamic 
