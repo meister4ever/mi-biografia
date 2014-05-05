@@ -1,3 +1,0 @@
-// the configured options and settings for MiBiografia
-#define MiBiografia_VERSION_MAJOR @MiBiografia_VERSION_MAJOR@
-#define MiBiografia_VERSION_MINOR @MiBiografia_VERSION_MINOR@
