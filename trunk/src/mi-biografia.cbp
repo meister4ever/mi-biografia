@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mi-biografia" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/Debug/mi-biografia" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/Release/mi-biografia" prefix_auto="1" extension_auto="1" />
+				<Option working_dir=".." />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="domain_AutorId.cpp" />
+		<Unit filename="domain_AutorId.h" />
+		<Unit filename="domain_AutorOcurrencia.cpp" />
+		<Unit filename="domain_AutorOcurrencia.h" />
+		<Unit filename="domain_AutorReferencias.cpp" />
+		<Unit filename="domain_AutorReferencias.h" />
+		<Unit filename="domain_RegistroGenerico.h" />
+		<Unit filename="domain_TituloId.cpp" />
+		<Unit filename="domain_TituloId.h" />
+		<Unit filename="domain_TituloOcurrencia.cpp" />
+		<Unit filename="domain_TituloOcurrencia.h" />
+		<Unit filename="domain_TituloReferencias.cpp" />
+		<Unit filename="domain_TituloReferencias.h" />
+		<Unit filename="fisica_ArchivoBloques.cpp" />
+		<Unit filename="fisica_ArchivoBloques.h" />
+		<Unit filename="fisica_Block.h" />
+		<Unit filename="fisica_DirHandler.cpp" />
+		<Unit filename="fisica_DirHandler.h" />
+		<Unit filename="fisica_SerialBuffer.cpp" />
+		<Unit filename="fisica_SerialBuffer.h" />
+		<Unit filename="fisica_VarBuffer.cpp" />
+		<Unit filename="fisica_VarBuffer.h" />
+		<Unit filename="interfaz_Menu.cpp" />
+		<Unit filename="interfaz_Menu.h" />
+		<Unit filename="lib_ListaFija.h" />
+		<Unit filename="logica_ArbolBmas.h" />
+		<Unit filename="logica_ArbolBmasNodo.h" />
+		<Unit filename="logica_ArbolBmasNodoHoja.h" />
+		<Unit filename="logica_ArbolBmasNodoInterno.h" />
+		<Unit filename="logica_BlockTable.h" />
+		<Unit filename="logica_Buscador.cpp" />
+		<Unit filename="logica_Buscador.h" />
+		<Unit filename="logica_Comparable.h" />
+		<Unit filename="logica_FileHandler.cpp" />
+		<Unit filename="logica_FileHandler.h" />
+		<Unit filename="logica_HashExtensible.cpp" />
+		<Unit filename="logica_HashExtensible.h" />
+		<Unit filename="logica_Indexer.cpp" />
+		<Unit filename="logica_Indexer.h" />
+		<Unit filename="logica_Indice.h" />
+		<Unit filename="logica_IndiceAutor.cpp" />
+		<Unit filename="logica_IndiceAutor.h" />
+		<Unit filename="logica_IndiceIdentificadores.cpp" />
+		<Unit filename="logica_IndiceIdentificadores.h" />
+		<Unit filename="logica_IndiceTitulo.cpp" />
+		<Unit filename="logica_IndiceTitulo.h" />
+		<Unit filename="logica_Reg.cpp" />
+		<Unit filename="logica_Reg.h" />
+		<Unit filename="logica_SortExterno.h" />
+		<Unit filename="logica_Utils.cpp" />
+		<Unit filename="logica_Utils.h" />
+		<Unit filename="logica_Validator.cpp" />
+		<Unit filename="logica_Validator.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="parametros.conf" />
+		<Unit filename="runtimeConfig.cpp" />
+		<Unit filename="runtimeConfig.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
