@@ -1,0 +1,41 @@
+** attempting to load extensions
+** loading tweeterLogger.exts
+-- using SSL for default URLs.
+trying to find cURL ... /usr/bin/curl
+-- Streaming API disabled (no -dostream) (TTYtter will use REST API only)
+-- checking TTYtter version: http://www.floodgap.com/software/ttytter/02current.txt
+-- your version of TTYtter is up to date (2.1.0)
+(checking credentials) test-login SUCCEEDED!
+-- processing credentials: logged in as ignaciogiss
+*** detached daemon released. pid = 7118
+TP_DATOS
+a0> <jotaleonetti> #corte en Independencia al 1100 por bomberos
+a1> <jotaleonetti> Habilitado el transito en Azopardo y México #FINpiquete
+a2> (x5) <jotaleonetti> #LaBonaerense aprovechó el #finde para "amenazar con multar" no tener comprobante del pago del seguro. Buscan coima http://bit.ly/oR0Ukd
+a3> (x4) <jotaleonetti> También #corte en Avenida  Madero y Cordoba. Eviten por completo el Bajo (via @PaisaJacinto) https://pbs.twimg.com/media/Bm5YPmrCIAA65mB.jpg
+a4> <jotaleonetti> Choque múltiple #Au9deJulioSur altura Brandsen sentido Avellaneda. Colisionaron 2 motos, 3 autos y un camión. Hay 2 heridos trasladados
+a5> (x98) <soundgarden> Words you say never seem\nTo live up to the ones\nInside your head\n\nPhoto by Kevin Westenberg\n\n#Superunknown20 https://pbs.twimg.com/media/Bmq4CZDCUAAE1Hx.jpg
+a6> (x5) <jotaleonetti> Prefectura está desviando el tránsito y no deja ingresar a Alicia Moreau de Justo. Hay que ir de #PuertoMadero hasta #9deJulio
+a7> <jotaleonetti> Habría otro #choque en #Au25deMayo altura #9deJulio sentido oeste. La congestión se extiende hasta el caótico Bajo
+a8> (x3) <jotaleonetti> Incluso #PuertoMadero está colapsado. Juana Manso parece un estacionamiento (vía  @CeciBritto_) https://pbs.twimg.com/media/Bm5sP50CMAIziXb.jpg
+a9> (x8) <jotaleonetti> Todo el caos en el Bajo y #PuertoMadero tiene que ver con un superoperativo de seguridad por un acto de la comunidad judía en el #LunaPark
+b0> (x2) <jotaleonetti> Desde esta noche y hasta el viernes, #corte total de Avenida Saenz entre Intendente Rabanal y Amancio Alcorta
+b1> <jotaleonetti> Caida de motociclista en #AuOeste km 17, altura Haedo, sentido Lujan. Transito muy lento (vía @Porotoblack)
+b2> <jotaleonetti> Informa @123SEGURO Liberadas las obras de #AuLaPlata en km 14 y km 27 sentido Cpaital. Marcha lenta hacia La Plata desde km 9
+b3> (x29) <jotaleonetti> No importa de quién sea el evento en el #LunaPark. Después de 4 días feriados, es una locura que @gcba autorice el cierre total del Bajo
+b4> (x19) <jotaleonetti> #Caos para salir del Centro por un acto. Una lástima que autoridades y Comunidad Judía no hayan pensado en la gente https://pbs.twimg.com/media/Bm5wXI_IEAAG1KK.jpg
+b5> (x2) <jotaleonetti> El operativo por el acto en el #LunaPark supera ampliamente a cualquier dispositivo de seguridad, por evento deportivo o show.
+b6> (x5) <jotaleonetti> La diferencia sustancial entre el caos de un piquete y el del #LunaPark es que éste está autorizado
+b7> (x9) <jotaleonetti> Un solo acceso habilitado en estación Alem de #Subte B. 25 minutos para poder salir. Una locura (vía @laminaagotada) https://pbs.twimg.com/media/Bm54gXIIYAIFMM7.jpg
+b8> <jotaleonetti> Sigue congestionada #Au9deJulioSur sentido Avellaneda. Liberado el choque múltiple altura Brandsen, pero hay otro nuevo altura Finocchieto
+b9> (x3) <jotaleonetti> Corte por #piquete en #Ruta3 (Avenida Juan Manuel de Rosas) y cruce del #TrenBelgranoSur en #IsidroCasanova (vía @campana2216)
+c0> (x2) <jotaleonetti> También por el #piquete en #IsidroCasanova, el #TrenBelgranosur está limitado entre Buenos Aires y Tapiales, y de Castillo a Marinos
+c1> <jotaleonetti> Otro choque auto y moto en #AuOeste km 16,5 sentido Lujan. Transito muy lento (via @Porotoblack)
+c2> <jotaleonetti> Choque 2 vehiculos en #AuRiccheri km 16 salida Boulogne Sur Mer sentido capital
+c3> <jotaleonetti> Pero además ¿No habría sido incluso más sencillo para los mismos asistentes al acto en el #LunaPark hacerlo el #finde largo?
+c4> (x8) <jotaleonetti> Ya funciona #TrenRoca expreso a Cañuelas. Para ajustar, faltan rampas de accesibilidad (vía @delcastillo_ale)  https://pbs.twimg.com/media/Bm6Bx_GIUAAyFOz.jpg
+c5> (x7) <jotaleonetti> RT @Tartu_: Me matan las peleas con GPS. Hablan de Haedo, Lanus, Uriarte y Nicaragua. Q carajo son? Un radiotaxi? < Yo no tengo nada que ver
+c6> (x5) <jotaleonetti> #MarcadosporelDestino ¿cómo se llama el motoquero? Cesar Casco! https://pbs.twimg.com/media/Bm6jMGiIYAAXdX3.jpg
+c7> <jotaleonetti> #SeguridadVial El casco (con su diversidad de tamaños) es propio de la persona y no de la moto, sea un ciclomotor o un 250 cc @3P_A24
+c8> (x21) <%jotaleonetti> RT @MarioMarkic: Me encantaría q todos pudiéramos  conocer la Arg.Conocer,aprender, lo bueno, lo malo.Vivir experiencias,romper prejuicios...Otro país sería.
+TP_DATOS
