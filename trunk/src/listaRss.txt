@@ -1,0 +1,3 @@
+http://www.juventudrebelde.cu/get/rss/grupo/generales
+http://www.juventudrebelde.cu/get/rss/noticias/ciencia-tecnica
+http://www.juventudrebelde.cu/get/rss/noticias/cultura

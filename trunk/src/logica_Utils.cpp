@@ -224,9 +224,14 @@ void Utils::dividirRssFiles (int fecha) {
 
 void Utils::dividirTwt(string fileName, int contador, int fecha) {
     string line = "";
-    ifstream inFile;
+
     string filePathName = sourcePath() + "/fuentesTwt/" + fileName;
-    inFile.open(filePathName.c_str());
+
+    ifstream inFile(filePathName.c_str());
+    if (inFile.is_open())
+        inFile.close();
+
+    inFile.open(filePathName.c_str(), ifstream::in);
     string marcador = "TP_DATOS";
     string separador = "-";
 
@@ -286,3 +291,13 @@ void Utils::dividirTwtFiles (int fecha) {
   } else {
   }
 }
+
+int Utils::getFecha()
+{
+    time_t theTime = time(NULL);
+    struct tm *aTime = localtime(&theTime);
+    int fecha = aTime->tm_year + 1900; // da anio desde 1900
+
+    return fecha;
+}
+

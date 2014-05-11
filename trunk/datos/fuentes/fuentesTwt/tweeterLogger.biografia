@@ -1,5 +1,5 @@
 ** attempting to load extensions
-** loading tweeterLogger.exts
+** loading //home/nacho/tweeterLogger.exts
 -- using SSL for default URLs.
 trying to find cURL ... /usr/bin/curl
 -- Streaming API disabled (no -dostream) (TTYtter will use REST API only)
@@ -7,35 +7,39 @@ trying to find cURL ... /usr/bin/curl
 -- your version of TTYtter is up to date (2.1.0)
 (checking credentials) test-login SUCCEEDED!
 -- processing credentials: logged in as ignaciogiss
-*** detached daemon released. pid = 7118
+*** detached daemon released. pid = 4177
 TP_DATOS
-a0> <jotaleonetti> #corte en Independencia al 1100 por bomberos
-a1> <jotaleonetti> Habilitado el transito en Azopardo y México #FINpiquete
-a2> (x5) <jotaleonetti> #LaBonaerense aprovechó el #finde para "amenazar con multar" no tener comprobante del pago del seguro. Buscan coima http://bit.ly/oR0Ukd
-a3> (x4) <jotaleonetti> También #corte en Avenida  Madero y Cordoba. Eviten por completo el Bajo (via @PaisaJacinto) https://pbs.twimg.com/media/Bm5YPmrCIAA65mB.jpg
-a4> <jotaleonetti> Choque múltiple #Au9deJulioSur altura Brandsen sentido Avellaneda. Colisionaron 2 motos, 3 autos y un camión. Hay 2 heridos trasladados
-a5> (x98) <soundgarden> Words you say never seem\nTo live up to the ones\nInside your head\n\nPhoto by Kevin Westenberg\n\n#Superunknown20 https://pbs.twimg.com/media/Bmq4CZDCUAAE1Hx.jpg
-a6> (x5) <jotaleonetti> Prefectura está desviando el tránsito y no deja ingresar a Alicia Moreau de Justo. Hay que ir de #PuertoMadero hasta #9deJulio
-a7> <jotaleonetti> Habría otro #choque en #Au25deMayo altura #9deJulio sentido oeste. La congestión se extiende hasta el caótico Bajo
-a8> (x3) <jotaleonetti> Incluso #PuertoMadero está colapsado. Juana Manso parece un estacionamiento (vía  @CeciBritto_) https://pbs.twimg.com/media/Bm5sP50CMAIziXb.jpg
-a9> (x8) <jotaleonetti> Todo el caos en el Bajo y #PuertoMadero tiene que ver con un superoperativo de seguridad por un acto de la comunidad judía en el #LunaPark
-b0> (x2) <jotaleonetti> Desde esta noche y hasta el viernes, #corte total de Avenida Saenz entre Intendente Rabanal y Amancio Alcorta
-b1> <jotaleonetti> Caida de motociclista en #AuOeste km 17, altura Haedo, sentido Lujan. Transito muy lento (vía @Porotoblack)
-b2> <jotaleonetti> Informa @123SEGURO Liberadas las obras de #AuLaPlata en km 14 y km 27 sentido Cpaital. Marcha lenta hacia La Plata desde km 9
-b3> (x29) <jotaleonetti> No importa de quién sea el evento en el #LunaPark. Después de 4 días feriados, es una locura que @gcba autorice el cierre total del Bajo
-b4> (x19) <jotaleonetti> #Caos para salir del Centro por un acto. Una lástima que autoridades y Comunidad Judía no hayan pensado en la gente https://pbs.twimg.com/media/Bm5wXI_IEAAG1KK.jpg
-b5> (x2) <jotaleonetti> El operativo por el acto en el #LunaPark supera ampliamente a cualquier dispositivo de seguridad, por evento deportivo o show.
-b6> (x5) <jotaleonetti> La diferencia sustancial entre el caos de un piquete y el del #LunaPark es que éste está autorizado
-b7> (x9) <jotaleonetti> Un solo acceso habilitado en estación Alem de #Subte B. 25 minutos para poder salir. Una locura (vía @laminaagotada) https://pbs.twimg.com/media/Bm54gXIIYAIFMM7.jpg
-b8> <jotaleonetti> Sigue congestionada #Au9deJulioSur sentido Avellaneda. Liberado el choque múltiple altura Brandsen, pero hay otro nuevo altura Finocchieto
-b9> (x3) <jotaleonetti> Corte por #piquete en #Ruta3 (Avenida Juan Manuel de Rosas) y cruce del #TrenBelgranoSur en #IsidroCasanova (vía @campana2216)
-c0> (x2) <jotaleonetti> También por el #piquete en #IsidroCasanova, el #TrenBelgranosur está limitado entre Buenos Aires y Tapiales, y de Castillo a Marinos
-c1> <jotaleonetti> Otro choque auto y moto en #AuOeste km 16,5 sentido Lujan. Transito muy lento (via @Porotoblack)
-c2> <jotaleonetti> Choque 2 vehiculos en #AuRiccheri km 16 salida Boulogne Sur Mer sentido capital
-c3> <jotaleonetti> Pero además ¿No habría sido incluso más sencillo para los mismos asistentes al acto en el #LunaPark hacerlo el #finde largo?
-c4> (x8) <jotaleonetti> Ya funciona #TrenRoca expreso a Cañuelas. Para ajustar, faltan rampas de accesibilidad (vía @delcastillo_ale)  https://pbs.twimg.com/media/Bm6Bx_GIUAAyFOz.jpg
-c5> (x7) <jotaleonetti> RT @Tartu_: Me matan las peleas con GPS. Hablan de Haedo, Lanus, Uriarte y Nicaragua. Q carajo son? Un radiotaxi? < Yo no tengo nada que ver
-c6> (x5) <jotaleonetti> #MarcadosporelDestino ¿cómo se llama el motoquero? Cesar Casco! https://pbs.twimg.com/media/Bm6jMGiIYAAXdX3.jpg
-c7> <jotaleonetti> #SeguridadVial El casco (con su diversidad de tamaños) es propio de la persona y no de la moto, sea un ciclomotor o un 250 cc @3P_A24
-c8> (x21) <%jotaleonetti> RT @MarioMarkic: Me encantaría q todos pudiéramos  conocer la Arg.Conocer,aprender, lo bueno, lo malo.Vivir experiencias,romper prejuicios...Otro país sería.
+a0> (x4) <jotaleonetti> Habilitan Paseo Colon al sur, sigue #corte por #piquete altura San Juan sentido Casa Rosada
+a1> (x15) <@tmorello> “@hatebreed1fan: Amazing clip mate. Do you have to pinch yourself sometimes to make sure your life is not a dream” Quite often.
+a2> (x48) <%tmorello> RT @OccupyWallSt: Pussy Riot Visits NYC Prison to Support @OccupyWallSt Hero Cecily McMillan: http://occupywallst.org
+a3> (x10) <@tmorello> “@StayMetal2496: If i ever got a RT from @tmorello i honestly dont know how i would react really” Only one way to find out.
+a4> (x6) <jotaleonetti> Por las obras nocturnas, la última formación de #Subte B sale a las 21:30 desde Alem hacia Rosas
+a5> (x5) <jotaleonetti> Cada organismo metaboliza el alcohol de diferente manera, la "cultura alcohólica" es real pero hace creer estar bien #SitomasteNomanejes
+a6> (x3) <jotaleonetti> Habilitada Paseo Colon y San Juan #FINpiquete
+a7> (x2) <jotaleonetti> Sigue la demora en #Au9deJulioSur rumbo a #PuentePueyrredon por partido de Independiente
+a8> <jotaleonetti> Choque múltiple en inicio de #AuOeste sentido Lujan. Se extienden demoras desde #AuMoreno
+a9> (x2) <jotaleonetti> Choque 2 vehiculos en #AuOeste km 27 altura Ituzaingo sentido capital, 3 heridos
+b0> (x2) <jotaleonetti> Desde medianoche, #corte total de \nAlvear, Juncal y Cerrito en inmediaciones a #AuIllia por monumento al Padre Mujica http://ow.ly/i/5vOlz
+b1> (x4) <jotaleonetti> Cayó #Semáforo en Federico Lacroze y 11 de Septiembre, peatón lesionado
+b2> <jotaleonetti> Demoras en #AuOeste sentido Luján, trabadas las salidas a ruta 23 y ruta 25, en #Moreno (via @cesar_cacha)
+b3> (x5) <%jotaleonetti> RT @INFOen140: El Ministro de Interior y Transporte @RandazzoF criticó a los sindicalistas que hoy pararon sorpresivamente el  #TrenSanMartín
+b4> (x2) <jotaleonetti> Como todas las noches, #corte de #AuDellepiane al centro altura Montiel por #piquete
+b5> <jotaleonetti> Choque 3 vehiculos en #AuOeste Km 31 a Capital, altura Paso del Rey, 2 heridos. #Corte total y desvio a colectora (via @Porotoblack)
+b6> (x6) <jotaleonetti> #SeguridadVial Con #Niebla nunca se detenga en banquina ni bajo puentes, continúe despacio hasta una estación de servicio o camino auxiliar
+b7> (x3) <jotaleonetti> #corte Libertador a metros de #GeneralPaz sentido Norte en #VicenteLopez (via @chucky9901) https://pbs.twimg.com/media/BnRhVp_IEAA-lKo.jpg
+b8> (x9) <%Billy> RT @RESISTANCE_Pro: WATCH IT: Extended Episode 13 of @RESISTANCE_Pro TV HD 2.0 is available NOW at http://youtu.be/BWMKng67LHw! Main: @MickieLKnuckles @D_arcyDixon
+b9> (x26) <@tmorello> “@FlagshipWMG: when asked what kind of music does he want to pump him up for tball,my 4 yr requests The Ghost of Tom Joad #proudpapa” MVP
+c0> (x9) <%tmorello> RT @press4change: Thx @CounterPunchOrg: Quote of the Day "The rich march on Washington every day." - IF Stone cc @DannyPostel @tmorello
+c1> (x156) <tmorello> Congrats to #MichaelSam and my #StLouisRams on making history today!! 1st openly gay player drafted in… http://instagram.com/p/n1jBTAuLfg/
+c2> (x56) <%jotaleonetti> RT @PEU_AR: @jotaleonetti motoquero con mensaje https://pbs.twimg.com/media/BnTd69cIYAAj40G.jpg
+c3> (x38) <SmashingPumpkin> FINISHING TOUCHES ON 'ADORE' REISSUE AT HOWIE WEINBERG'S STUDIO  WITH BILLY CORGAN + HOWARD WILLING\n http://www.smashingpumpkinsnexus.com/#!-FINISHING-TOUCHES-ON-ADORE-REISSUE-AT-HOWIE-WEINBERGS-STUDIO-WITH-BILLY-CORGAN-HOWARD-WILLING/c7ba/E4E6468F-C689-4AEC-A0D3-2BE7C4AB4722
+c4> (x11) <%SmashingPumpkin> RT @ZuZusTeahouse: The first 7 Mothers who come in tomorrow will receive a free tea + a signed Mothers Day card from William Patrick Corgan #WeLoveOurMommies
+c5> (x4) <%SmashingPumpkin> RT @ZuZusTeahouse: Even if you didn't get to order in time for Mother's Day.. Mom will APPRECIATE the effort and LOVE your ZUZUS gifts http://www.madamezuzus.com
+c6> (x27) <@tmorello> “@backstreetsmag: VIDEO: 45-minute Dutch @Springsteen doc, 'High Hopes in South Africa' @StevieVanZandt & @tmorello http://youtu.be/yNDZnkiJ0Jc”
+c7> (x24) <SmashingPumpkin> HIT THE LIGHTS / SP ALBUM UPDATE\n#SPNexus #PANOPTICON http://www.smashingpumpkinsnexus.com/#!HIT-THE-LIGHTS-SP-ALBUM-UPDATE/c7ba/E22F6725-3486-4E8D-8737-3F744FFC9C3B
+c8> (x98) <%Billy> RT @alka_seltzer666: “Beautiful Noise a doc about My Bloody Valentine, Cocteau Twins, Jesus and Mary Chain etc http://p4k.in/1sdW6yR” a Shoegaze doc FINALLY!!💚👌
+c9> (x68) <Billy> HAPPY MOTHER'S DAY to all the beautiful, life giving Mommy's I have been blessed by
+TP_DATOS
+TP_DATOS
+TP_DATOS
 TP_DATOS
