@@ -7,6 +7,7 @@
 #include <fstream>
 #include <cstdlib>
 #include <sstream>
+#include <time.h>
 #include "dirent.h"
 
 using namespace std;
@@ -26,6 +27,7 @@ class Utils{
         static string IntToStr(int n);
         static void dividirRssFiles(int fecha);
         static void dividirTwtFiles(int fecha);
+        static int getFecha();
 
 };
 

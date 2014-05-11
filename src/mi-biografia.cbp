@@ -65,6 +65,8 @@
 		<Unit filename="logica_Buscador.cpp" />
 		<Unit filename="logica_Buscador.h" />
 		<Unit filename="logica_Comparable.h" />
+		<Unit filename="logica_Descargador.cpp" />
+		<Unit filename="logica_Descargador.h" />
 		<Unit filename="logica_FileHandler.cpp" />
 		<Unit filename="logica_FileHandler.h" />
 		<Unit filename="logica_HashExtensible.cpp" />
