@@ -162,7 +162,7 @@ string Utils::IntToStr(int n)
 }
 
 
-void Utils::dividirRss(string fileName, int contador, int fecha) {
+void Utils::dividirRss(string fileName, int contador, string fecha) {
     string line = "";
     ifstream inFile;
     string filePathName = sourcePath() + "/fuentesRss/" + fileName;
@@ -178,10 +178,9 @@ void Utils::dividirRss(string fileName, int contador, int fecha) {
     getline(inFile,line);
     string tempStr;
     while (!inFile.eof()) {
-
       salidaStr = sourcePath() + "/rss_" +  IntToStr(contador) + "_" + IntToStr(i) +".txt";
       salida.open(salidaStr.c_str(), ios::trunc);
-      salida << fileName + separador + IntToStr(fecha) + separador;
+      salida << fileName + separador + fecha + separador;
       tempStr = line.substr(line.size()>marcador1.size() ?
 			      marcador1.size() : 0) + separador;
       salida << tempStr;
@@ -200,7 +199,7 @@ void Utils::dividirRss(string fileName, int contador, int fecha) {
 }
 
 
-void Utils::dividirRssFiles (int fecha) {
+void Utils::dividirRssFiles (string fecha) {
   DIR *dir;
   struct dirent *ent;
   string dirFull = sourcePath() + "/fuentesRss";
@@ -222,7 +221,7 @@ void Utils::dividirRssFiles (int fecha) {
 }
 
 
-void Utils::dividirTwt(string fileName, int contador, int fecha) {
+void Utils::dividirTwt(string fileName, int contador, string fecha) {
     string line = "";
 
     string filePathName = sourcePath() + "/fuentesTwt/" + fileName;
@@ -254,7 +253,7 @@ void Utils::dividirTwt(string fileName, int contador, int fecha) {
 
 
       if ((pos1!=string::npos) && (pos_fin!=string::npos)){
-	  salida << line.substr(pos1+1, pos_fin-pos1-1) + separador + IntToStr(fecha) + separador;
+	  salida << line.substr(pos1+1, pos_fin-pos1-1) + separador + fecha + separador;
 
 	  pos1 = line.find_first_of("@#");
 
@@ -272,7 +271,7 @@ void Utils::dividirTwt(string fileName, int contador, int fecha) {
     inFile.close();
 }
 
-void Utils::dividirTwtFiles (int fecha) {
+void Utils::dividirTwtFiles (string fecha) {
   DIR *dir;
   struct dirent *ent;
   string dirFull = sourcePath() + "/fuentesTwt";
@@ -292,11 +291,12 @@ void Utils::dividirTwtFiles (int fecha) {
   }
 }
 
-int Utils::getFecha()
+string Utils::getFecha()
 {
+    string separador = "/";
     time_t theTime = time(NULL);
     struct tm *aTime = localtime(&theTime);
-    int fecha = aTime->tm_year + 1900; // da anio desde 1900
+    string fecha = IntToStr(aTime->tm_mday) + separador + IntToStr(aTime->tm_mon) + separador + IntToStr(aTime->tm_year + 1900); // da anio desde 1900
 
     return fecha;
 }

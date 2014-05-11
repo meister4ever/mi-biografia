@@ -14,8 +14,8 @@ using namespace std;
 
 class Utils{
     private:
-        static void dividirRss(string fileName, int contador, int fecha);
-        static void dividirTwt(string fileName, int contador, int fecha);
+        static void dividirRss(string fileName, int contador, string fecha);
+        static void dividirTwt(string fileName, int contador, string fecha);
     public:
         static int splitString(string s, char delimitador, list<string> *ptr);
         static string getClaveFromHeader(string header);
@@ -25,9 +25,11 @@ class Utils{
         static string uniformizarString(string source);
         static int existeArchivo(string archivo);
         static string IntToStr(int n);
-        static void dividirRssFiles(int fecha);
-        static void dividirTwtFiles(int fecha);
-        static int getFecha();
+        static string devolverFechaDeLinea(string linea, string fecha);
+        static void dividirRssFiles(string fecha);
+        static void dividirTwtFiles(string fecha);
+
+        static string getFecha();
 
 };
 
