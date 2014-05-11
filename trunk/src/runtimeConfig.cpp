@@ -75,24 +75,7 @@ unsigned int arbolBlockSize()
     return stoi(readParam("ARBOL_TAMANIO_BLOQUE_CONFIG"));
 }
 
-int estadistaMaximoAutoresMasBuscados()
-{
-    return stoi(readParam("ESTADISTA_MAXIMO_AUTORES_MAS_BUSCADOS"));
-}
 
-int estadistaMaximoTitulosMasBuscados()
-{
-    return stoi(readParam("ESTADISTA_MAXIMO_TITULOS_MAS_BUSCADOS"));
-}
-
-int estadistaMaximoFrasesMasBuscadas()
-{
-    return stoi(readParam("ESTADISTA_MAXIMO_FRASES_MAS_BUSCADAS"));
-}
-unsigned int PPMCOrder()
-{
-    return stoi(readParam("PPMC_ORDER"));
-}
 
 
 

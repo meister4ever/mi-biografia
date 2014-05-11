@@ -22,12 +22,4 @@ unsigned int hashBlockSize();
 
 unsigned int arbolBlockSize();
 
-int estadistaMaximoAutoresMasBuscados();
-
-int estadistaMaximoTitulosMasBuscados();
-
-int estadistaMaximoFrasesMasBuscadas();
-
-unsigned int PPMCOrder();
-
 #endif
