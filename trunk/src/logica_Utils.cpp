@@ -15,7 +15,6 @@ int Utils::splitString(string s, char del, list<string> *ptr){
     return 0;
 }
 
-
 string Utils::getClaveFromHeader(string header){
     list<string> *ptr = new list<string>;
     Utils::splitString(header,'-',ptr);
@@ -59,6 +58,20 @@ int Utils::getTitulosFromHeader(string header, list<string>* lista){
     return 0;
 }
 
+int Utils::getFechasFromHeader(string header, list<string>* lista){
+    list<string> *ptr = new list<string>;
+    Utils::splitString(header,'-',ptr);
+    ptr->pop_back();
+    ptr->pop_back();
+    string s = ptr->back();
+    delete ptr;
+    string s2;
+    istringstream is(s);
+    while (getline(is,s2,';')){
+        lista->push_back(Utils::uniformizarString(s2));
+    }
+    return 0;
+}
 
 string Utils::getTituloFromHeader(string header){
     list<string> *ptr = new list<string>;
@@ -72,8 +85,7 @@ string Utils::getTituloFromHeader(string header){
     return titulo;
 }
 
-
-string Utils::uniformizarString(string source){
+    string Utils::uniformizarString(string source){
     ostringstream dest;
     char c;
     for(unsigned int i=0; i < source.size();i++){

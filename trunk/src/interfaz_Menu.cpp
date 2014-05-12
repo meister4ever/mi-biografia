@@ -38,11 +38,12 @@ int Menu::imprimir()
     cout << "1. Indexar fuentes " << endl;
     cout << "2. Buscar fuentes por autor" << endl;
     cout << "3. Buscar fuentes por titulo" << endl;
-    cout << "4. Listar todos las fuentes indexadas" << endl;
-    cout << "5. Decargar fuente Rss" << endl;
-    cout << "6. Decargar fuente Twt" << endl;
+    cout << "4. Buscar fuentes por fecha" << endl;
+    cout << "5. Listar todos las fuentes indexadas" << endl;
+    cout << "6. Descargar fuente Rss" << endl;
+    cout << "7. Descargar fuente Twt" << endl;
 
-    cout << "7. Salir" << endl<<endl;
+    cout << "8. Salir" << endl<<endl;
     return 0;
 }
 
@@ -65,7 +66,7 @@ int Menu::ingresarOpcion(int opcion){
     Indexer *in;
     Buscador *busc;
     switch(opcion){
-        case 7:
+        case 8:
             return 0;
         case 1:
             in = new Indexer;
@@ -118,18 +119,38 @@ int Menu::ingresarOpcion(int opcion){
             delete busc;
             std::cout << std::endl;
             break;
-
         case 4:
+            busc = new Buscador();
+            cout << "Ingrese el fecha a buscar" << endl;
+            std::cin.ignore();
+            std::getline(std::cin, text);
+
+
+            text = Utils::uniformizarString(text);
+            std::cout << std::endl;
+            while (text.compare("0")){
+                busc->buscarPorFecha(text);
+                std::cout << std::endl;
+                std::cout << "Ingrese la fecha a buscar / Ingrese '0' para volver al menú principal" << std::endl;
+                std::getline(std::cin, text);
+                text = Utils::uniformizarString(text);
+                std::cout << std::endl;
+            }
+            delete busc;
+            std::cout << std::endl;
+            break;
+
+        case 5:
             busc = new Buscador();
             busc->listarTodo();
             delete busc;
             break;
 
-        case 5:
+        case 6:
             Descargador::menuRss();
             break;
 
-        case 6:
+        case 7:
             std::cout << "Descargando Tweets"<<std::endl;
             Descargador::descargarTwt();
             break;

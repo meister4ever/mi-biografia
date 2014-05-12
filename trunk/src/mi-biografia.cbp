@@ -38,6 +38,12 @@
 		<Unit filename="domain_AutorOcurrencia.h" />
 		<Unit filename="domain_AutorReferencias.cpp" />
 		<Unit filename="domain_AutorReferencias.h" />
+		<Unit filename="domain_FechaOcurrencia.cpp" />
+		<Unit filename="domain_FechaOcurrencia.h" />
+		<Unit filename="domain_FechaReferencias.cpp" />
+		<Unit filename="domain_FechaReferencias.h" />
+		<Unit filename="domain_Fechaid.cpp" />
+		<Unit filename="domain_Fechaid.h" />
 		<Unit filename="domain_RegistroGenerico.h" />
 		<Unit filename="domain_TituloId.cpp" />
 		<Unit filename="domain_TituloId.h" />
@@ -76,6 +82,8 @@
 		<Unit filename="logica_Indice.h" />
 		<Unit filename="logica_IndiceAutor.cpp" />
 		<Unit filename="logica_IndiceAutor.h" />
+		<Unit filename="logica_IndiceFecha.cpp" />
+		<Unit filename="logica_IndiceFecha.h" />
 		<Unit filename="logica_IndiceIdentificadores.cpp" />
 		<Unit filename="logica_IndiceIdentificadores.h" />
 		<Unit filename="logica_IndiceTitulo.cpp" />
@@ -88,7 +96,6 @@
 		<Unit filename="logica_Validator.cpp" />
 		<Unit filename="logica_Validator.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="parametros.conf" />
 		<Unit filename="runtimeConfig.cpp" />
 		<Unit filename="runtimeConfig.h" />
 		<Extensions>
