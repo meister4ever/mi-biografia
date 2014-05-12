@@ -10,6 +10,7 @@ Buscador::Buscador() {
     this->outName=dest+"salida.out";
     autores = new IndiceAutor(dest);
     titulos =  new IndiceTitulo(dest);
+    fechas =  new IndiceFecha(dest);
 }
 
 Buscador::~Buscador(){
@@ -42,7 +43,7 @@ int Buscador::buscarPorAutor(std::string autor){
         cout << header << std::endl;
         imprimirFuente(*it);
     }
-    cout << "Las letras fueron impresas en el archivo salida.out de su carpeta de destino" << std::endl;
+    cout << "Los autores fueron impresos en el archivo salida.out de su carpeta de destino" << std::endl;
     file.close();
     delete listilla;
     return 0;
@@ -73,15 +74,16 @@ int Buscador::buscarPorTitulo(std::string titulo){
         cout << header << std::endl;
         imprimirFuente(*it);
     }
-    cout << "Las letras fueron impresas en el archivo salida.out de su carpeta de destino" << std::endl;
+    cout << "Los titulos fueron impresos en el archivo salida.out de su carpeta de destino" << std::endl;
     file.close();
     delete listilla;
     return 0;
 }
 
-int Buscador::buscarPorFrase(std::string frase){
+int Buscador::buscarPorFecha(std::string fecha){
     std::list<unsigned int> *listilla;
     listilla = new std::list<unsigned int>;
+    fechas->recuperar(fecha,listilla);
     remove(outName.c_str());
     if(listilla->size() == 0){
         cout << "No se encontraron fuentes" << std::endl;
@@ -99,10 +101,11 @@ int Buscador::buscarPorFrase(std::string frase){
         file.read((char*)&largo,sizeof(largo));
         getline(file,header);
 
+
         cout << header << std::endl;
         imprimirFuente(*it);
     }
-    cout << "Las letras fueron impresas en el archivo salida.out de su carpeta de destino" << std::endl;
+    cout << "Las fechas fueron impresas en el archivo salida.out de su carpeta de destino" << std::endl;
     file.close();
     delete listilla;
     return 0;

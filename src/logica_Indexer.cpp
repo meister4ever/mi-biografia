@@ -15,17 +15,20 @@ Indexer::Indexer(){
     masterName = dest+".master";
     autores = new IndiceAutor(dest);
     titulos =  new IndiceTitulo(dest);
+    fechas =  new IndiceFecha(dest);
 }
 
 Indexer::~Indexer(){
     delete autores;
     delete titulos;
+    delete fechas;
 }
 
 int Indexer::eliminarTodo(){
     remove(masterName.c_str());
     autores->eliminarTodo();
     titulos->eliminarTodo();
+    fechas->eliminarTodo();
     return 0;
 }
 
@@ -52,15 +55,18 @@ int Indexer::indexarFuentesDesde(int mode){
                 std::cout << textPosition;
                 this->indexarAutores(header,textPosition); //agrego ocurrencia de autor
                 this->indexarTitulo(header,textPosition);//agrego ocurrencia de titulo
+                this->indexarFecha(header,textPosition);//agrego ocurrencia de fecha
                           }
         }
     }
     if(mode){ //verifico si es modo scratch o append
         autores->packAppend();//guardo en arboles y hash
         titulos->packAppend();
+        fechas->packAppend();
     }else{
         autores->pack();
         titulos->pack();
+        fechas->pack();
     }
 
 
@@ -133,5 +139,15 @@ int Indexer::indexarTitulo(std::string header, unsigned int textPosition){
     return 0;
 }
 
+int Indexer::indexarFecha(std::string header, unsigned int textPosition){
+    std::list<std::string>* fechasLista = new std::list<std::string>;
+    Utils::getFechasFromHeader(header,fechasLista);
+    std::list<std::string>::iterator it;
+    for(it = fechasLista->begin(); it != fechasLista->end();it++){
+        this->fechas->agregar(textPosition,*it);
+    }
+    delete fechasLista;
+    return 0;
+}
 
 

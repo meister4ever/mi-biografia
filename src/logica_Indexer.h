@@ -4,6 +4,7 @@
 #include <iostream>
 #include "logica_IndiceAutor.h"
 #include "logica_IndiceTitulo.h"
+#include "logica_IndiceFecha.h"
 
 
 class Indexer{
@@ -17,8 +18,10 @@ class Indexer{
         int copyToMaster(std::string from, std::string to);
         int indexarAutores(std::string header, unsigned int textPosition);
         int indexarTitulo(std::string header, unsigned int textPosition);
+        int indexarFecha(std::string header, unsigned int textPosition);
         IndiceAutor *autores;
         IndiceTitulo *titulos;
+        IndiceFecha *fechas;
         std::string fromPath;
         std::string dest;
         std::string masterName;

@@ -375,7 +375,7 @@
 	"fisica_VarBuffer.h"
 	<string.h>
 
-1399825208 source:/home/seba/7506/mi-biografia/src/interfaz_Menu.cpp
+1399851508 source:/home/seba/7506/mi-biografia/src/interfaz_Menu.cpp
 	<iostream>
 	"interfaz_Menu.h"
 	"logica_Validator.h"
@@ -391,10 +391,11 @@
 1399825208 /home/seba/7506/mi-biografia/src/logica_Validator.h
 	<iostream>
 
-1399825208 /home/seba/7506/mi-biografia/src/logica_Indexer.h
+1399849616 /home/seba/7506/mi-biografia/src/logica_Indexer.h
 	<iostream>
 	"logica_IndiceAutor.h"
 	"logica_IndiceTitulo.h"
+	"logica_IndiceFecha.h"
 
 1399825208 /home/seba/7506/mi-biografia/src/logica_IndiceAutor.h
 	<iostream>
@@ -445,11 +446,12 @@
 	"domain_TituloReferencias.h"
 	<list>
 
-1399825208 /home/seba/7506/mi-biografia/src/logica_Buscador.h
+1399851625 /home/seba/7506/mi-biografia/src/logica_Buscador.h
 	"logica_IndiceAutor.h"
 	"logica_IndiceTitulo.h"
+	"logica_IndiceFecha.h"
 
-1399840442 /home/seba/7506/mi-biografia/src/logica_Utils.h
+1399851236 /home/seba/7506/mi-biografia/src/logica_Utils.h
 	<iostream>
 	<list>
 	<string>
@@ -472,7 +474,7 @@
 	"dirent.h"
 	"runtimeConfig.h"
 
-1399825208 source:/home/seba/7506/mi-biografia/src/logica_Buscador.cpp
+1399851889 source:/home/seba/7506/mi-biografia/src/logica_Buscador.cpp
 	<iostream>
 	<list>
 	"logica_Buscador.h"
@@ -499,7 +501,7 @@
 1399825208 /home/seba/7506/mi-biografia/src/logica_HashExtensible.h
 	<string>
 
-1399825208 source:/home/seba/7506/mi-biografia/src/logica_Indexer.cpp
+1399851280 source:/home/seba/7506/mi-biografia/src/logica_Indexer.cpp
 	<iostream>
 	<fstream>
 	<sstream>
@@ -595,11 +597,52 @@
 	"runtimeConfig.h"
 	<sstream>
 
-1399840584 source:/home/seba/7506/mi-biografia/src/logica_Utils.cpp
+1399853402 source:/home/seba/7506/mi-biografia/src/logica_Utils.cpp
 	<iostream>
 	<sstream>
 	<fstream>
 	<stdio.h>
 	"runtimeConfig.h"
 	"logica_Utils.h"
+
+1399848259 source:/home/seba/7506/mi-biografia/src/domain_Fechaid.cpp
+	"domain_Fechaid.h"
+	<string.h>
+
+1399853980 /home/seba/7506/mi-biografia/src/domain_Fechaid.h
+	"logica_Comparable.h"
+	<iostream>
+
+1399848199 source:/home/seba/7506/mi-biografia/src/domain_FechaOcurrencia.cpp
+	"domain_FechaOcurrencia.h"
+	<iostream>
+
+1399848071 /home/seba/7506/mi-biografia/src/domain_FechaOcurrencia.h
+	"logica_Comparable.h"
+	<iostream>
+
+1399846700 source:/home/seba/7506/mi-biografia/src/domain_FechaReferencias.cpp
+	"domain_FechaReferencias.h"
+
+1399846686 /home/seba/7506/mi-biografia/src/domain_FechaReferencias.h
+	"domain_RegistroGenerico.h"
+
+1399852221 source:/home/seba/7506/mi-biografia/src/logica_IndiceFecha.cpp
+	"logica_IndiceFecha.h"
+	"logica_SortExterno.h"
+	"domain_Fechaid.h"
+	"domain_FechaReferencias.h"
+	"logica_Utils.h"
+	<string.h>
+	<string>
+	<fstream>
+	<iostream>
+	<climits>
+
+1399848071 /home/seba/7506/mi-biografia/src/logica_IndiceFecha.h
+	<iostream>
+	"domain_FechaOcurrencia.h"
+	"logica_ArbolBmas.h"
+	"domain_FechaReferencias.h"
+	<list>
 
