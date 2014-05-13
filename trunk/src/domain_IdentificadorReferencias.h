@@ -1,6 +1,8 @@
 #ifndef DOMAIN_IDENTIFICADORREFERENCIAS_H_INCLUDED
 #define DOMAIN_IDENTIFICADORREFERENCIAS_H_INCLUDED
+
 #include "domain_RegistroGenerico.h"
+
 
 class IdentificadorReferencias : public RegistroGenerico {
     public:
@@ -12,12 +14,16 @@ class IdentificadorReferencias : public RegistroGenerico {
         unsigned int getRef1();
         unsigned int getRef2();
         unsigned int getRef3();
+        unsigned int getRef4();
+        unsigned int getRef5();
         unsigned int getRefLista();
         unsigned int getCant();
         unsigned int* getRefs();
         void setRef1(unsigned int ref);
         void setRef2(unsigned int ref);
         void setRef3(unsigned int ref);
+        void setRef4(unsigned int ref);
+        void setRef5(unsigned int ref);
         void setRefLista(unsigned int ref);
         void setCant(unsigned int cant);
 
@@ -25,11 +31,10 @@ class IdentificadorReferencias : public RegistroGenerico {
         static size_t getTamanioEnBytes();
 
     private:
-        unsigned int refs[3];
+        unsigned int refs[5];
         unsigned int refLista;
         unsigned int cant;
 
 };
 
 #endif // DOMAIN_IDENTIFICADORREFERENCIAS_H_INCLUDED
-

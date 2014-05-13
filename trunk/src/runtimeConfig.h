@@ -12,10 +12,6 @@ std::string sourcePath();
 
 std::string destPath();
 
-std::string testFile();
-
-std::string testFileTable();
-
 unsigned int maxDedupTimes();
 
 unsigned int hashBlockSize();

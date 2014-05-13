@@ -16,7 +16,7 @@ Indexer::Indexer(){
     autores = new IndiceAutor(dest);
     titulos =  new IndiceTitulo(dest);
     fechas =  new IndiceFecha(dest);
-    identificadores =  new IndiceIdentificadores(dest);
+    identificadores =  new IndiceIdentificador(dest);
 }
 
 Indexer::~Indexer(){

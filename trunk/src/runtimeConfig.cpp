@@ -50,15 +50,6 @@ std::string destPath()
     return readParam("DEST_PATH");
 }
 
-std::string  testFile()
-{
-    return readParam("TEST_FILE");
-}
-
-std::string testFileTable()
-{
-    return readParam("TEST_FILE_TABLE");
-}
 
 unsigned int maxDedupTimes()
 {

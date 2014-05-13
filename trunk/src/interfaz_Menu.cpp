@@ -151,7 +151,7 @@ int Menu::ingresarOpcion(int opcion){
             text = Utils::uniformizarString(text);
             std::cout << std::endl;
             while (text.compare("0")){
-                busc->buscarPorFecha(text);
+                busc->buscarPorIdentificador(text);
                 std::cout << std::endl;
                 std::cout << "Ingrese el identificador a buscar / Ingrese '0' para volver al menú principal" << std::endl;
                 std::getline(std::cin, text);

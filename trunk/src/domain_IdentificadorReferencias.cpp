@@ -26,6 +26,14 @@ unsigned int IdentificadorReferencias::getRef3(){
     return this->refs[2];
 }
 
+unsigned int IdentificadorReferencias::getRef4(){
+    return this->refs[3];
+}
+
+unsigned int IdentificadorReferencias::getRef5(){
+    return this->refs[4];
+}
+
 unsigned int IdentificadorReferencias::getRefLista(){
     return this->refLista;
 }
@@ -46,6 +54,14 @@ void IdentificadorReferencias::setRef3(unsigned int ref){
     this->refs[2] = ref;
 }
 
+void IdentificadorReferencias::setRef4(unsigned int ref){
+    this->refs[3] = ref;
+}
+
+void IdentificadorReferencias::setRef5(unsigned int ref){
+    this->refs[4]= ref;
+}
+
 void IdentificadorReferencias::setRefLista(unsigned int ref){
     this->refLista = ref;
 }
@@ -55,10 +71,10 @@ unsigned int* IdentificadorReferencias::getRefs(){
 }
 
 int IdentificadorReferencias::serializar(SerialBuffer *buffer){
-	RegistroGenerico::serializar(buffer);
+    RegistroGenerico::serializar(buffer);
     if(buffer->pack(&cant,sizeof(cant)))
 		return 0;
-    if(buffer->pack(refs,sizeof(unsigned int)*3))
+    if(buffer->pack(refs,sizeof(unsigned int)*5))
 		return 0;
     if(buffer->pack(&refLista,sizeof(refLista)))
 		return 0;
@@ -82,8 +98,7 @@ size_t IdentificadorReferencias::getTamanioEnBytes()
     bytes += RegistroGenerico::getTamanioEnBytes();
 
     // Agregamos el tamanio de los atributos de esta clase
-    bytes += sizeof(unsigned int)*5 + sizeof(unsigned short int)*3;
+    bytes += sizeof(unsigned int)*7 + sizeof(unsigned short int)*3;
 
     return bytes;
 }
-
