@@ -344,10 +344,10 @@
 	"logica_Comparable.h"
 	<iostream>
 
-1399825208 source:/home/seba/7506/mi-biografia/src/domain_TituloReferencias.cpp
+1399936192 source:/home/seba/7506/mi-biografia/src/domain_TituloReferencias.cpp
 	"domain_TituloReferencias.h"
 
-1399825208 /home/seba/7506/mi-biografia/src/domain_TituloReferencias.h
+1399936245 /home/seba/7506/mi-biografia/src/domain_TituloReferencias.h
 	"domain_RegistroGenerico.h"
 
 1399825208 source:/home/seba/7506/mi-biografia/src/fisica_ArchivoBloques.cpp
@@ -375,7 +375,7 @@
 	"fisica_VarBuffer.h"
 	<string.h>
 
-1399851508 source:/home/seba/7506/mi-biografia/src/interfaz_Menu.cpp
+1399938066 source:/home/seba/7506/mi-biografia/src/interfaz_Menu.cpp
 	<iostream>
 	"interfaz_Menu.h"
 	"logica_Validator.h"
@@ -391,11 +391,12 @@
 1399825208 /home/seba/7506/mi-biografia/src/logica_Validator.h
 	<iostream>
 
-1399849616 /home/seba/7506/mi-biografia/src/logica_Indexer.h
+1399861903 /home/seba/7506/mi-biografia/src/logica_Indexer.h
 	<iostream>
 	"logica_IndiceAutor.h"
 	"logica_IndiceTitulo.h"
 	"logica_IndiceFecha.h"
+	"logica_IndiceIdentificadores.h"
 
 1399825208 /home/seba/7506/mi-biografia/src/logica_IndiceAutor.h
 	<iostream>
@@ -419,7 +420,7 @@
 	"fisica_SerialBuffer.h"
 	"runtimeConfig.h"
 
-1399825208 /home/seba/7506/mi-biografia/src/runtimeConfig.h
+1399942161 /home/seba/7506/mi-biografia/src/runtimeConfig.h
 	<string>
 	<iostream>
 	<fstream>
@@ -439,19 +440,20 @@
 	"logica_ArbolBmasNodoHoja.h"
 	"lib_ListaFija.h"
 
-1399825208 /home/seba/7506/mi-biografia/src/logica_IndiceTitulo.h
+1399936259 /home/seba/7506/mi-biografia/src/logica_IndiceTitulo.h
 	<iostream>
 	"domain_TituloOcurrencia.h"
 	"logica_ArbolBmas.h"
 	"domain_TituloReferencias.h"
 	<list>
 
-1399851625 /home/seba/7506/mi-biografia/src/logica_Buscador.h
+1399861675 /home/seba/7506/mi-biografia/src/logica_Buscador.h
 	"logica_IndiceAutor.h"
 	"logica_IndiceTitulo.h"
 	"logica_IndiceFecha.h"
+	"logica_IndiceIdentificadores.h"
 
-1399851236 /home/seba/7506/mi-biografia/src/logica_Utils.h
+1399863118 /home/seba/7506/mi-biografia/src/logica_Utils.h
 	<iostream>
 	<list>
 	<string>
@@ -474,7 +476,7 @@
 	"dirent.h"
 	"runtimeConfig.h"
 
-1399851889 source:/home/seba/7506/mi-biografia/src/logica_Buscador.cpp
+1399861688 source:/home/seba/7506/mi-biografia/src/logica_Buscador.cpp
 	<iostream>
 	<list>
 	"logica_Buscador.h"
@@ -501,7 +503,7 @@
 1399825208 /home/seba/7506/mi-biografia/src/logica_HashExtensible.h
 	<string>
 
-1399851280 source:/home/seba/7506/mi-biografia/src/logica_Indexer.cpp
+1399939287 source:/home/seba/7506/mi-biografia/src/logica_Indexer.cpp
 	<iostream>
 	<fstream>
 	<sstream>
@@ -531,7 +533,7 @@
 	<iostream>
 	<fstream>
 
-1399825208 source:/home/seba/7506/mi-biografia/src/logica_IndiceIdentificadores.cpp
+1399860628 source:/home/seba/7506/mi-biografia/src/logica_IndiceIdentificadores.cpp
 	"logica_IndiceIdentificadores.h"
 	"domain_AutorId.h"
 	"logica_SortExterno.h"
@@ -541,10 +543,10 @@
 	<string.h>
 	<climits>
 
-1399825208 /home/seba/7506/mi-biografia/src/logica_IndiceIdentificadores.h
+1399936368 /home/seba/7506/mi-biografia/src/logica_IndiceIdentificadores.h
 	<iostream>
 	"domain_AutorOcurrencia.h"
-	"domain_TituloReferencias.h"
+	"domain_IdentificadorReferencias.h"
 	<list>
 	"logica_BlockTable.h"
 
@@ -564,7 +566,7 @@
 	"runtimeConfig.h"
 	"fisica_SerialBuffer.h"
 
-1399825208 source:/home/seba/7506/mi-biografia/src/logica_IndiceTitulo.cpp
+1399936433 source:/home/seba/7506/mi-biografia/src/logica_IndiceTitulo.cpp
 	"logica_IndiceTitulo.h"
 	"logica_SortExterno.h"
 	"domain_TituloId.h"
@@ -582,7 +584,7 @@
 
 1399825208 /home/seba/7506/mi-biografia/src/logica_Reg.h
 
-1399825208 source:/home/seba/7506/mi-biografia/src/logica_Validator.cpp
+1399945827 source:/home/seba/7506/mi-biografia/src/logica_Validator.cpp
 	"logica_Validator.h"
 	<iostream>
 	<sstream>
@@ -593,11 +595,11 @@
 	"interfaz_Menu.h"
 	"logica_Utils.h"
 
-1399825208 source:/home/seba/7506/mi-biografia/src/runtimeConfig.cpp
+1399942161 source:/home/seba/7506/mi-biografia/src/runtimeConfig.cpp
 	"runtimeConfig.h"
 	<sstream>
 
-1399853402 source:/home/seba/7506/mi-biografia/src/logica_Utils.cpp
+1399947517 source:/home/seba/7506/mi-biografia/src/logica_Utils.cpp
 	<iostream>
 	<sstream>
 	<fstream>
@@ -645,4 +647,26 @@
 	"logica_ArbolBmas.h"
 	"domain_FechaReferencias.h"
 	<list>
+
+1399860628 source:/home/seba/7506/mi-biografia/src/domain_IdentificadorReferencias.cpp
+	"domain_IdentificadorReferencias.h"
+
+1399860678 /home/seba/7506/mi-biografia/src/domain_IdentificadorReferencias.h
+	"domain_RegistroGenerico.h"
+
+1399358678 source:/home/seba/7506/mi-biografia/src/dividirRss/dividirRss.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<string>
+	<sstream>
+	"dirent.h"
+
+1399357009 source:/home/seba/7506/mi-biografia/src/dividirTwt/dividirTwt.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<string>
+	<sstream>
+	"dirent.h"
 

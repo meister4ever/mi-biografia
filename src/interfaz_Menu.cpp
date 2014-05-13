@@ -39,11 +39,12 @@ int Menu::imprimir()
     cout << "2. Buscar fuentes por autor" << endl;
     cout << "3. Buscar fuentes por titulo" << endl;
     cout << "4. Buscar fuentes por fecha" << endl;
-    cout << "5. Listar todos las fuentes indexadas" << endl;
-    cout << "6. Descargar fuente Rss" << endl;
-    cout << "7. Descargar fuente Twt" << endl;
+    cout << "5. Buscar fuentes por identificador" << endl;
+    cout << "6. Listar todos las fuentes indexadas" << endl;
+    cout << "7. Descargar fuente Rss" << endl;
+    cout << "8. Descargar fuente Twt" << endl;
 
-    cout << "8. Salir" << endl<<endl;
+    cout << "9. Salir" << endl<<endl;
     return 0;
 }
 
@@ -66,7 +67,7 @@ int Menu::ingresarOpcion(int opcion){
     Indexer *in;
     Buscador *busc;
     switch(opcion){
-        case 8:
+        case 9:
             return 0;
         case 1:
             in = new Indexer;
@@ -142,15 +143,37 @@ int Menu::ingresarOpcion(int opcion){
 
         case 5:
             busc = new Buscador();
+            cout << "Ingrese el identificador a buscar" << endl;
+            std::cin.ignore();
+            std::getline(std::cin, text);
+
+
+            text = Utils::uniformizarString(text);
+            std::cout << std::endl;
+            while (text.compare("0")){
+                busc->buscarPorFecha(text);
+                std::cout << std::endl;
+                std::cout << "Ingrese el identificador a buscar / Ingrese '0' para volver al menú principal" << std::endl;
+                std::getline(std::cin, text);
+                text = Utils::uniformizarString(text);
+                std::cout << std::endl;
+            }
+            delete busc;
+            std::cout << std::endl;
+            break;
+
+
+        case 6:
+            busc = new Buscador();
             busc->listarTodo();
             delete busc;
             break;
 
-        case 6:
+        case 7:
             Descargador::menuRss();
             break;
 
-        case 7:
+        case 8:
             std::cout << "Descargando Tweets"<<std::endl;
             Descargador::descargarTwt();
             break;

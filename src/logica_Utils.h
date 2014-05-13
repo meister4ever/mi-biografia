@@ -22,7 +22,9 @@ class Utils{
         static int getAutoresFromHeader(string s, list<string>*);
         static int getTitulosFromHeader(string s, list<string>*);
         static int getFechasFromHeader(string s, list<string>*);
+        static int getIdentificadorFromHeader(string s, list<string>*);
         static string getTituloFromHeader(string header);
+
         static string uniformizarString(string source);
         static int existeArchivo(string archivo);
         static string IntToStr(int n);

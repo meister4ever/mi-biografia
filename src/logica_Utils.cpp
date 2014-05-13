@@ -21,6 +21,7 @@ string Utils::getClaveFromHeader(string header){
     ostringstream s;
     s << Utils::uniformizarString(ptr->front()) << "-";
     ptr->pop_front();
+    ptr->pop_front();
     if(ptr->size() == 3){
         ptr->pop_front();
     }
@@ -34,6 +35,7 @@ string Utils::getClaveFromHeader(string header){
 int Utils::getAutoresFromHeader(string header, list<string>* lista){
     list<string> *ptr = new list<string>;
     Utils::splitString(header,'-',ptr);
+    ptr->pop_front();
     string s = ptr->front();
     delete ptr;
     string s2;
@@ -64,6 +66,19 @@ int Utils::getFechasFromHeader(string header, list<string>* lista){
     ptr->pop_back();
     ptr->pop_back();
     string s = ptr->back();
+    delete ptr;
+    string s2;
+    istringstream is(s);
+    while (getline(is,s2,';')){
+        lista->push_back(Utils::uniformizarString(s2));
+    }
+    return 0;
+}
+
+int Utils::getIdentificadorFromHeader(string header, list<string>* lista){
+    list<string> *ptr = new list<string>;
+    Utils::splitString(header,'-',ptr);
+    string s = ptr->front();
     delete ptr;
     string s2;
     istringstream is(s);
@@ -181,7 +196,7 @@ void Utils::dividirRss(string fileName, int contador, string fecha) {
     inFile.open(filePathName.c_str());
     string marcador1 = "Title:";
     string marcador2 = "Description:";
-    string separador = "-";
+    string separador = " - ";
     string salidaStr;
 
     ofstream salida;
@@ -192,14 +207,14 @@ void Utils::dividirRss(string fileName, int contador, string fecha) {
     while (!inFile.eof()) {
       salidaStr = sourcePath() + "/rss_" +  IntToStr(contador) + "_" + IntToStr(i) +".txt";
       salida.open(salidaStr.c_str(), ios::trunc);
-      salida << fileName + separador + fecha + separador;
+      salida << "N" + IntToStr(contador) + IntToStr(i) + separador + fileName + separador + fecha + separador;
       tempStr = line.substr(line.size()>marcador1.size() ?
 			      marcador1.size() : 0) + separador;
       salida << tempStr;
 
       getline(inFile,line);
       tempStr = line.substr(line.size()>marcador2.size() ?
-			      marcador2.size() : 0) + separador;
+			      marcador2.size() : 0);
       salida << tempStr;
 
       salida.close();
@@ -265,14 +280,15 @@ void Utils::dividirTwt(string fileName, int contador, string fecha) {
 
 
       if ((pos1!=string::npos) && (pos_fin!=string::npos)){
-	  salida << line.substr(pos1+1, pos_fin-pos1-1) + separador + fecha + separador;
+	  salida << "T" + IntToStr(contador) + IntToStr(i) + separador
+                + line.substr(pos1+1, pos_fin-pos1-1) + separador + fecha + separador;
 
 	  pos1 = line.find_first_of("@#");
 
 	  size_t pos2 = line.find_first_of(": ",pos1+1);
 
 	if ((pos1!=string::npos) && (pos2!=string::npos))
-	  salida << line.substr(pos1+1, pos2-pos1-1) + separador;
+	  salida << line.substr(pos1+1, pos2-pos1-1);
 
 	salida << line.substr(pos_fin+1) << endl;
       }
