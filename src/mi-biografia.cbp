@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Makefile" />
 		<Unit filename="domain_AutorId.cpp" />
 		<Unit filename="domain_AutorId.h" />
 		<Unit filename="domain_AutorOcurrencia.cpp" />
@@ -44,6 +45,8 @@
 		<Unit filename="domain_FechaReferencias.h" />
 		<Unit filename="domain_Fechaid.cpp" />
 		<Unit filename="domain_Fechaid.h" />
+		<Unit filename="domain_IdentificadorOcurrencia.cpp" />
+		<Unit filename="domain_IdentificadorOcurrencia.h" />
 		<Unit filename="domain_IdentificadorReferencias.cpp" />
 		<Unit filename="domain_IdentificadorReferencias.h" />
 		<Unit filename="domain_RegistroGenerico.h" />
@@ -65,6 +68,7 @@
 		<Unit filename="interfaz_Menu.cpp" />
 		<Unit filename="interfaz_Menu.h" />
 		<Unit filename="lib_ListaFija.h" />
+		<Unit filename="listaRss.txt" />
 		<Unit filename="logica_ArbolBmas.h" />
 		<Unit filename="logica_ArbolBmasNodo.h" />
 		<Unit filename="logica_ArbolBmasNodoHoja.h" />
@@ -81,23 +85,21 @@
 		<Unit filename="logica_HashExtensible.h" />
 		<Unit filename="logica_Indexer.cpp" />
 		<Unit filename="logica_Indexer.h" />
-		<Unit filename="logica_Indice.h" />
 		<Unit filename="logica_IndiceAutor.cpp" />
 		<Unit filename="logica_IndiceAutor.h" />
 		<Unit filename="logica_IndiceFecha.cpp" />
 		<Unit filename="logica_IndiceFecha.h" />
-		<Unit filename="logica_IndiceIdentificadores.cpp" />
-		<Unit filename="logica_IndiceIdentificadores.h" />
+		<Unit filename="logica_IndiceIdentificador.cpp" />
+		<Unit filename="logica_IndiceIdentificador.h" />
 		<Unit filename="logica_IndiceTitulo.cpp" />
 		<Unit filename="logica_IndiceTitulo.h" />
-		<Unit filename="logica_Reg.cpp" />
-		<Unit filename="logica_Reg.h" />
 		<Unit filename="logica_SortExterno.h" />
 		<Unit filename="logica_Utils.cpp" />
 		<Unit filename="logica_Utils.h" />
 		<Unit filename="logica_Validator.cpp" />
 		<Unit filename="logica_Validator.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="parametros.conf" />
 		<Unit filename="runtimeConfig.cpp" />
 		<Unit filename="runtimeConfig.h" />
 		<Extensions>
