@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "domain_AutorOcurrencia.h"
-#include "domain_TituloReferencias.h"
+#include "domain_IdentificadorReferencias.h"
 #include <list>
 #include "logica_BlockTable.h"
 
@@ -29,7 +29,7 @@ class IndiceIdentificadores{
         unsigned int getRefLista();
         int guardarRefLista(std::list<unsigned int>* lista);
         int copylist(unsigned int reflista,std::list<unsigned int>*lista);
-        BlockTable<TituloReferencias>* hash;
+        BlockTable<IdentificadorReferencias>* hash;
 
         std::string temporalOcurrencias;
         std::string identificadores;

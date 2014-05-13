@@ -13,7 +13,7 @@ IndiceIdentificadores::IndiceIdentificadores(std::string path){
     this->listaRefs = path + ".identificadoresRef";
     this->tableName =path+".hashTable";
     this->blocksName=path+".hashTitulos";
-    this->hash = new BlockTable<TituloReferencias>(tableName,blocksName,hashBlockSize());
+    this->hash = new BlockTable<IdentificadorReferencias>(tableName,blocksName,hashBlockSize());
 }
 
 IndiceIdentificadores::IndiceIdentificadores(){
@@ -119,7 +119,7 @@ int IndiceIdentificadores::pack(){
         while(!file.eof()){
             titulo = aid.getAutorId();
             cant = 0;
-            TituloReferencias* ar = new TituloReferencias(titulo);
+            IdentificadorReferencias* ar = new IdentificadorReferencias(titulo);
             refLista = this->getRefLista();
             lista = new std::list<unsigned int>();
             while((aid.getAutorId() == titulo) && !file.eof()){
@@ -172,7 +172,7 @@ int IndiceIdentificadores::packAppend(){
         while(!file.eof()){
             titulo = aid.getAutorId();
             cant = 0;
-            TituloReferencias* ar = new TituloReferencias(titulo);
+            IdentificadorReferencias* ar = new IdentificadorReferencias(titulo);
             refLista = this->getRefLista();
             lista = new std::list<unsigned int>();
             bool b = hash->search(ar);
@@ -289,7 +289,7 @@ int IndiceIdentificadores::recuperar(std::string titulo, std::list<unsigned int>
         return 0;
     }
     unsigned int clave = (unsigned int) clave2;
-    TituloReferencias* ar = new TituloReferencias();
+    IdentificadorReferencias* ar = new IdentificadorReferencias();
     ar->setClave(clave);
     bool b = hash->search(ar);
     if(b){
@@ -322,7 +322,7 @@ int IndiceIdentificadores::eliminarTodo(){
     remove(tableName.c_str());
     remove(blocksName.c_str());
     delete this->hash;
-    this->hash = new BlockTable<TituloReferencias>(tableName,blocksName,hashBlockSize());
+    this->hash = new BlockTable<IdentificadorReferencias>(tableName,blocksName,hashBlockSize());
 
     return 0;
 }

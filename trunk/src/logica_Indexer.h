@@ -5,7 +5,7 @@
 #include "logica_IndiceAutor.h"
 #include "logica_IndiceTitulo.h"
 #include "logica_IndiceFecha.h"
-
+#include "logica_IndiceIdentificadores.h"
 
 class Indexer{
     public:
@@ -19,9 +19,11 @@ class Indexer{
         int indexarAutores(std::string header, unsigned int textPosition);
         int indexarTitulo(std::string header, unsigned int textPosition);
         int indexarFecha(std::string header, unsigned int textPosition);
+        int indexarIdentificador(std::string header, unsigned int textPosition);
         IndiceAutor *autores;
         IndiceTitulo *titulos;
         IndiceFecha *fechas;
+        IndiceIdentificadores *identificadores;
         std::string fromPath;
         std::string dest;
         std::string masterName;
