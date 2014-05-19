@@ -18,6 +18,23 @@ Buscador::~Buscador(){
     delete autores;
     delete titulos;
     delete identificadores;
+    delete fechas;
+}
+
+void Buscador::borrarPorAutor(std::string autor){
+    autores->borrar(autor);
+}
+
+void Buscador::borrarPorFecha(std::string fecha){
+    fechas->borrar(fecha);
+}
+
+void Buscador::borrarPorIdentificador(std::string identificador){
+    identificadores->borrar(identificador);
+}
+
+void Buscador::borrarPorTitulo(std::string titulo){
+    titulos->borrar(titulo);
 }
 
 int Buscador::buscarPorAutor(std::string autor){

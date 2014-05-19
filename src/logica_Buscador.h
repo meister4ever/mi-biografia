@@ -11,6 +11,10 @@ class Buscador{
         Buscador();
         ~Buscador();
         int buscarPorAutor(std::string autor);
+        void borrarPorAutor(std::string autor);
+        void borrarPorFecha(std::string fecha);
+        void borrarPorIdentificador(std::string identificador);
+        void borrarPorTitulo(std::string titulo);
         int buscarPorTitulo(std::string titulo);
         int buscarPorFecha(std::string fecha);
         int buscarPorIdentificador(std::string fecha);

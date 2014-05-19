@@ -91,6 +91,43 @@ int IndiceIdentificador::buscarId(std::string titulo){
     return id;
 }
 
+int IndiceIdentificador::borrar(std::string identificador){
+    std::ifstream file;
+    std::ofstream file2;
+    std::string p;
+    int found = 0;
+    unsigned int id =0;
+    file.open(this->identificadores.c_str());
+    if(!file.good()){
+        return -1;
+    }
+    IdentificadorId* aui = new IdentificadorId();
+    if(file.good()){
+        file >> *aui;
+        while(!file.eof() && !found){
+            id = aui->getId();
+            const char* c=aui->getIdentificador();
+            if(!strcmp(c,identificador.c_str())){
+                found=1;
+                aui->setId(-1);
+                int largo = sizeof(*aui);
+                int posicion = file.tellg();
+                file2.open(this->identificadores.c_str());
+                file2.seekp(posicion-largo);
+                file2 << *aui;
+                file2.close();
+            }
+            file >> *aui;
+        }
+    }
+    file.close();
+    delete aui;
+    if(!found){
+        return -1;
+    }
+    return id;
+}
+
 /*unsigned int IndiceIdentificador::obtenerIdBinary(std::string titulo){
 return 0;
 }*/
