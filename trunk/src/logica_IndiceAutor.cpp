@@ -21,7 +21,10 @@ IndiceAutor::IndiceAutor(std::string path){
 IndiceAutor::~IndiceAutor(){
     delete arbol;
 }
-
+void IndiceAutor::imprimirAutores()
+{
+    this->arbol->imprimir();
+}
 
 int IndiceAutor::agregar(unsigned int textPosition, std::string autor){
     unsigned int autorId = this->obtenerId(autor);
