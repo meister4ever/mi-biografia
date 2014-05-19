@@ -45,6 +45,8 @@
 		<Unit filename="domain_FechaReferencias.h" />
 		<Unit filename="domain_Fechaid.cpp" />
 		<Unit filename="domain_Fechaid.h" />
+		<Unit filename="domain_IdentificadorId.cpp" />
+		<Unit filename="domain_IdentificadorId.h" />
 		<Unit filename="domain_IdentificadorOcurrencia.cpp" />
 		<Unit filename="domain_IdentificadorOcurrencia.h" />
 		<Unit filename="domain_IdentificadorReferencias.cpp" />

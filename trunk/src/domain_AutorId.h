@@ -7,17 +7,18 @@
 
 class AutorId : public Comparacion {
     public:
-        AutorId(const char* autor, unsigned int id);
+        AutorId(const char* autor, int id);
         AutorId();
         virtual ~AutorId();
         virtual int comparar(Comparacion *c) const;
-        unsigned int getId() const;
+        int getId() const;
+        void setId(int newId) ;
         const char* getAutor() const;
         friend std::istream& operator >> (std::istream &out, AutorId &ocur);
         friend std::ostream& operator << (std::ostream &out, AutorId &ocur);
     private:
         char autor[100];
-        unsigned int id;
+        int id;
 };
 
 #endif // DOMAIN_AUTORID_H_INCLUDED

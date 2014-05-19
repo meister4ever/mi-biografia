@@ -1041,3 +1041,361 @@
 	"domain_IdentificadorOcurrencia.h"
 	<iostream>
 
+1400524494 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_AutorId.cpp
+	"domain_AutorId.h"
+	<string.h>
+
+1400524494 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_AutorId.h
+	"logica_Comparable.h"
+	<iostream>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_Comparable.h
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_AutorOcurrencia.cpp
+	"domain_AutorOcurrencia.h"
+	<iostream>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_AutorOcurrencia.h
+	"logica_Comparable.h"
+	<iostream>
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_AutorReferencias.cpp
+	"domain_AutorReferencias.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_AutorReferencias.h
+	"domain_RegistroGenerico.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_RegistroGenerico.h
+	"fisica_SerialBuffer.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/fisica_SerialBuffer.h
+	<iostream>
+	<string.h>
+	"fisica_VarBuffer.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/fisica_VarBuffer.h
+	<iostream>
+	<fstream>
+
+1400528197 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_Fechaid.cpp
+	"domain_Fechaid.h"
+	<string.h>
+
+1400527840 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_Fechaid.h
+	"logica_Comparable.h"
+	<iostream>
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_FechaOcurrencia.cpp
+	"domain_FechaOcurrencia.h"
+	<iostream>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_FechaOcurrencia.h
+	"logica_Comparable.h"
+	<iostream>
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_FechaReferencias.cpp
+	"domain_FechaReferencias.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_FechaReferencias.h
+	"domain_RegistroGenerico.h"
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_IdentificadorOcurrencia.cpp
+	"domain_IdentificadorOcurrencia.h"
+	<iostream>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_IdentificadorOcurrencia.h
+	"logica_Comparable.h"
+	<iostream>
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_IdentificadorReferencias.cpp
+	"domain_IdentificadorReferencias.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_IdentificadorReferencias.h
+	"domain_RegistroGenerico.h"
+
+1400528197 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_TituloId.cpp
+	"domain_TituloId.h"
+	<string.h>
+
+1400528230 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_TituloId.h
+	"logica_Comparable.h"
+	<iostream>
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_TituloOcurrencia.cpp
+	"domain_TituloOcurrencia.h"
+	<iostream>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_TituloOcurrencia.h
+	"logica_Comparable.h"
+	<iostream>
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_TituloReferencias.cpp
+	"domain_TituloReferencias.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_TituloReferencias.h
+	"domain_RegistroGenerico.h"
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/fisica_ArchivoBloques.cpp
+	"fisica_ArchivoBloques.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/fisica_ArchivoBloques.h
+	<iostream>
+	<fstream>
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/fisica_DirHandler.cpp
+	"fisica_DirHandler.h"
+	<iostream>
+	<stdio.h>
+	<string.h>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/fisica_DirHandler.h
+	<string>
+	<list>
+	"dirent.h"
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/fisica_SerialBuffer.cpp
+	"fisica_SerialBuffer.h"
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/fisica_VarBuffer.cpp
+	"fisica_VarBuffer.h"
+	<string.h>
+
+1400525314 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/interfaz_Menu.cpp
+	<iostream>
+	"interfaz_Menu.h"
+	"logica_Validator.h"
+	"logica_Indexer.h"
+	"logica_Buscador.h"
+	"logica_Utils.h"
+	"runtimeConfig.h"
+	"logica_Descargador.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/interfaz_Menu.h
+	<iostream>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_Validator.h
+	<iostream>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_Indexer.h
+	<iostream>
+	"logica_IndiceAutor.h"
+	"logica_IndiceTitulo.h"
+	"logica_IndiceFecha.h"
+	"logica_IndiceIdentificador.h"
+
+1400525361 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_IndiceAutor.h
+	<iostream>
+	"domain_AutorOcurrencia.h"
+	"logica_ArbolBmas.h"
+	"domain_AutorReferencias.h"
+	<list>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_ArbolBmas.h
+	"logica_ArbolBmas.h"
+	"fisica_SerialBuffer.h"
+	"fisica_ArchivoBloques.h"
+	"logica_ArbolBmasNodo.h"
+	"logica_ArbolBmasNodoHoja.h"
+	"logica_ArbolBmasNodoInterno.h"
+	"runtimeConfig.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_ArbolBmasNodo.h
+	"logica_ArbolBmasNodo.h"
+	"fisica_ArchivoBloques.h"
+	"fisica_SerialBuffer.h"
+	"runtimeConfig.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/runtimeConfig.h
+	<string>
+	<iostream>
+	<fstream>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_ArbolBmasNodoHoja.h
+	"fisica_ArchivoBloques.h"
+	"logica_ArbolBmasNodo.h"
+	"lib_ListaFija.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/lib_ListaFija.h
+	<string>
+	"fisica_SerialBuffer.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_ArbolBmasNodoInterno.h
+	"fisica_ArchivoBloques.h"
+	"logica_ArbolBmasNodo.h"
+	"logica_ArbolBmasNodoHoja.h"
+	"lib_ListaFija.h"
+
+1400527877 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_IndiceTitulo.h
+	<iostream>
+	"domain_TituloOcurrencia.h"
+	"logica_ArbolBmas.h"
+	"domain_TituloReferencias.h"
+	<list>
+
+1400527939 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_IndiceFecha.h
+	<iostream>
+	"domain_FechaOcurrencia.h"
+	"logica_ArbolBmas.h"
+	"domain_FechaReferencias.h"
+	<list>
+
+1400527939 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_IndiceIdentificador.h
+	<iostream>
+	"domain_IdentificadorOcurrencia.h"
+	"logica_ArbolBmas.h"
+	"domain_IdentificadorReferencias.h"
+	<list>
+
+1400528409 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_Buscador.h
+	"logica_IndiceAutor.h"
+	"logica_IndiceTitulo.h"
+	"logica_IndiceFecha.h"
+	"logica_IndiceIdentificador.h"
+
+1400513330 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_Utils.h
+	<iostream>
+	<list>
+	<string>
+	<fstream>
+	<cstdlib>
+	<sstream>
+	<time.h>
+	<dirent.h>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_Descargador.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<string>
+	<list>
+	<stdlib.h>
+	<unistd.h>
+	<sys/types.h>
+	<pwd.h>
+	"dirent.h"
+	"runtimeConfig.h"
+
+1400528340 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_Buscador.cpp
+	<iostream>
+	<list>
+	"logica_Buscador.h"
+	"logica_Utils.h"
+	"runtimeConfig.h"
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_Descargador.cpp
+	<iostream>
+	"logica_Descargador.h"
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_FileHandler.cpp
+	"logica_FileHandler.h"
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<string>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_FileHandler.h
+	<string>
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_HashExtensible.cpp
+	"logica_HashExtensible.h"
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_HashExtensible.h
+	<string>
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_Indexer.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"logica_Indexer.h"
+	"fisica_DirHandler.h"
+	"logica_FileHandler.h"
+	"logica_Validator.h"
+	"logica_Utils.h"
+	"runtimeConfig.h"
+
+1400526339 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_IndiceAutor.cpp
+	"logica_IndiceAutor.h"
+	"logica_SortExterno.h"
+	"domain_AutorId.h"
+	"domain_AutorReferencias.h"
+	"logica_Utils.h"
+	<string.h>
+	<string>
+	<fstream>
+	<iostream>
+	<climits>
+
+1400512208 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_SortExterno.h
+	"logica_Comparable.h"
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+
+1400527534 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_IndiceFecha.cpp
+	"logica_IndiceFecha.h"
+	"logica_SortExterno.h"
+	"domain_Fechaid.h"
+	"domain_FechaReferencias.h"
+	"logica_Utils.h"
+	<string.h>
+	<string>
+	<fstream>
+	<iostream>
+	<climits>
+
+1400527604 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_IndiceIdentificador.cpp
+	"logica_IndiceIdentificador.h"
+	"logica_SortExterno.h"
+	"domain_IdentificadorId.h"
+	"domain_IdentificadorReferencias.h"
+	"logica_Utils.h"
+	<string.h>
+	<string>
+	<fstream>
+	<iostream>
+	<climits>
+
+1400527840 /home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_IdentificadorId.h
+	"logica_Comparable.h"
+	<iostream>
+
+1400527657 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_IndiceTitulo.cpp
+	"logica_IndiceTitulo.h"
+	"logica_SortExterno.h"
+	"domain_TituloId.h"
+	"domain_TituloReferencias.h"
+	"logica_Utils.h"
+	<string.h>
+	<string>
+	<fstream>
+	<iostream>
+	<climits>
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_Utils.cpp
+	<iostream>
+	<sstream>
+	<fstream>
+	<stdio.h>
+	"runtimeConfig.h"
+	"logica_Utils.h"
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/logica_Validator.cpp
+	"logica_Validator.h"
+	<iostream>
+	<sstream>
+	"logica_Utils.h"
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/main.cpp
+	<iostream>
+	"interfaz_Menu.h"
+	"logica_Utils.h"
+
+1400512208 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/runtimeConfig.cpp
+	"runtimeConfig.h"
+	<sstream>
+
+1400528197 source:/home/nacho/Documentos/Desarrollo/TP1/TP1temp/tp1_v18/mi-biografia/src/domain_IdentificadorId.cpp
+	"domain_IdentificadorId.h"
+	<string.h>
+
