@@ -6,7 +6,6 @@
 #include "logica_FileHandler.h"
 #include "logica_Validator.h"
 #include "logica_Utils.h"
-
 #include "runtimeConfig.h"
 
 Indexer::Indexer(){
@@ -17,6 +16,7 @@ Indexer::Indexer(){
     titulos =  new IndiceTitulo(dest);
     fechas =  new IndiceFecha(dest);
     identificadores =  new IndiceIdentificador(dest);
+    rtt = new RTTgenerator(dest);
 }
 
 Indexer::~Indexer(){
@@ -24,6 +24,7 @@ Indexer::~Indexer(){
     delete titulos;
     delete fechas;
     delete identificadores;
+    delete rtt;
 }
 
 int Indexer::eliminarTodo(){
@@ -32,6 +33,7 @@ int Indexer::eliminarTodo(){
     titulos->eliminarTodo();
     fechas->eliminarTodo();
     identificadores->eliminarTodo();
+    rtt->eliminarTodo();
     return 0;
 }
 
@@ -60,6 +62,7 @@ int Indexer::indexarFuentesDesde(int mode){
                 this->indexarTitulo(header,textPosition);//agrego ocurrencia de titulo
                 this->indexarFecha(header,textPosition);//agrego ocurrencia de fecha
                 this->indexarIdentificador(header,textPosition);//agrego ocurrencia de identificador
+                this->generateRTT(*it,textPosition);//agrego ocurrencia de rtt
                 }
         }
     }
@@ -68,11 +71,13 @@ int Indexer::indexarFuentesDesde(int mode){
         titulos->packAppend();
         fechas->packAppend();
         identificadores->packAppend();
+        rtt->packAppend();
     }else{
         autores->pack();
         titulos->pack();
         fechas->pack();
         identificadores->pack();
+        rtt->pack();
     }
 
 
@@ -167,3 +172,20 @@ int Indexer::indexarIdentificador(std::string header, unsigned int textPosition)
     return 0;
 }
 
+int Indexer::generateRTT(std::string textPath, unsigned int textPosition){
+    std::ifstream f;
+    std::string palabra;
+    std::string linea;
+    unsigned int position = 0;
+    f.open(textPath.c_str());
+    while(getline(f,linea)){
+        std::istringstream lineaS(linea);
+        while(getline(lineaS,palabra,' ')){
+            palabra = Utils::uniformizarString(palabra);
+            rtt->indexarPalabra(palabra, textPosition,position);
+            position++;
+        }
+    }
+    f.close();
+    return 0;
+}
