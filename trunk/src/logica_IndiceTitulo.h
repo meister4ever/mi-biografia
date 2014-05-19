@@ -18,7 +18,6 @@ class IndiceTitulo{
         int eliminarTodo();
         int pack();
         int packAppend();
-        int borrar(std::string titulo);
     private:
         unsigned int obtenerId(std::string palabra);
         int buscarId(std::string titulo);
