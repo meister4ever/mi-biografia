@@ -1,7 +1,7 @@
 #include "domain_IdentificadorId.h"
 #include <string.h>
 
-IdentificadorId::IdentificadorId(const char* identificador, unsigned int id){
+IdentificadorId::IdentificadorId(const char* identificador, int id){
     unsigned int cant = strlen(identificador);
     memcpy(this->identificador,identificador,cant>99 ? 100 : cant+1);
     this->id =id;
@@ -18,8 +18,12 @@ int IdentificadorId::comparar(Comparacion *obj) const{
     return strcmp(this->identificador,aid->getIdentificador());
 }
 
-unsigned int IdentificadorId::getId() const{
+int IdentificadorId::getId() const{
     return this->id;
+}
+
+void IdentificadorId::setId(int newId) {
+    this->id =newId;
 }
 
 const char* IdentificadorId::getIdentificador() const{

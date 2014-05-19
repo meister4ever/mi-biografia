@@ -40,12 +40,15 @@ int Menu::imprimir()
     cout << "3. Buscar fuentes por titulo" << endl;
     cout << "4. Buscar fuentes por fecha" << endl;
     cout << "5. Buscar fuentes por identificador" << endl;
-    cout << "6. Buscar fuentes por frase" << endl;
-    cout << "7. Listar todos las fuentes indexadas" << endl;
-    cout << "8. Descargar fuente Rss" << endl;
-    cout << "9. Descargar fuente Twt" << endl;
+    cout << "6. Listar todos las fuentes indexadas" << endl;
+    cout << "7. Descargar fuente Rss" << endl;
+    cout << "8. Descargar fuente Twt" << endl;
+    cout << "9. Borrar Autor" << endl;
+    cout << "10. Borrar Fecha" << endl;
+    cout << "11. Borrar Identificador" << endl;
+    cout << "12. Borrar Titulo" << endl;
 
-    cout << "10. Salir" << endl<<endl;
+    cout << "13. Salir" << endl<<endl;
     return 0;
 }
 
@@ -68,7 +71,7 @@ int Menu::ingresarOpcion(int opcion){
     Indexer *in;
     Buscador *busc;
     switch(opcion){
-        case 10:
+        case 13:
             return 0;
         case 1:
             in = new Indexer;
@@ -163,39 +166,102 @@ int Menu::ingresarOpcion(int opcion){
             std::cout << std::endl;
             break;
 
-       case 6:
-            busc = new Buscador();
-            cout << "Ingrese la frase a buscar" << endl;
-            std::cin.ignore();
-            std::getline(std::cin, text);
 
-            text = Utils::uniformizarString(text);
-            std::cout << std::endl;
-            while (text.compare("0")){
-                busc->buscarPorFrase(text);
-                std::cout << std::endl;
-                std::cout << "Ingrese el la frase a buscar / Ingrese '0' para volver al menú principal" << std::endl;
-                std::getline(std::cin, text);
-                text = Utils::uniformizarString(text);
-                std::cout << std::endl;
-            }
-            delete busc;
-            std::cout << std::endl;
-            break;
-        case 7:
+        case 6:
             busc = new Buscador();
             busc->listarTodo();
             delete busc;
             break;
 
-        case 8:
+        case 7:
             Descargador::menuRss();
             break;
 
-        case 9:
+        case 8:
             std::cout << "Descargando Tweets"<<std::endl;
             Descargador::descargarTwt();
             break;
+
+        case 9:
+            busc = new Buscador();
+            std::cout << "Ingrese el autor a borrar" << std::endl;
+            std::cin.ignore();
+            std::getline(std::cin, text);
+
+
+            text = Utils::uniformizarString(text);
+            std::cout << std::endl;
+            while (text.compare("0")){
+                busc->borrarPorAutor(text);
+                std::cout << std::endl;
+                std::cout << "Ingrese el autor a borrar / Ingrese '0' para volver al menú principal" << std::endl;
+                std::getline(std::cin, text);
+                text = Utils::uniformizarString(text);
+                std::cout << std::endl;
+            }
+            delete busc;
+            break;
+
+        case 10:
+            busc = new Buscador();
+            std::cout << "Ingrese la fecha a borrar" << std::endl;
+            std::cin.ignore();
+            std::getline(std::cin, text);
+
+
+            text = Utils::uniformizarString(text);
+            std::cout << std::endl;
+            while (text.compare("0")){
+                busc->borrarPorAutor(text);
+                std::cout << std::endl;
+                std::cout << "Ingrese la fecha a borrar / Ingrese '0' para volver al menú principal" << std::endl;
+                std::getline(std::cin, text);
+                text = Utils::uniformizarString(text);
+                std::cout << std::endl;
+            }
+            delete busc;
+            break;
+
+        case 11:
+            busc = new Buscador();
+            std::cout << "Ingrese el identificador a borrar" << std::endl;
+            std::cin.ignore();
+            std::getline(std::cin, text);
+
+
+            text = Utils::uniformizarString(text);
+            std::cout << std::endl;
+            while (text.compare("0")){
+                busc->borrarPorIdentificador(text);
+                std::cout << std::endl;
+                std::cout << "Ingrese el identificador a borrar / Ingrese '0' para volver al menú principal" << std::endl;
+                std::getline(std::cin, text);
+                text = Utils::uniformizarString(text);
+                std::cout << std::endl;
+            }
+            delete busc;
+            break;
+
+        case 12:
+            busc = new Buscador();
+            std::cout << "Ingrese el titulo a borrar" << std::endl;
+            std::cin.ignore();
+            std::getline(std::cin, text);
+
+
+            text = Utils::uniformizarString(text);
+            std::cout << std::endl;
+            while (text.compare("0")){
+                busc->borrarPorTitulo(text);
+                std::cout << std::endl;
+                std::cout << "Ingrese el titulo a borrar / Ingrese '0' para volver al menú principal" << std::endl;
+                std::getline(std::cin, text);
+                text = Utils::uniformizarString(text);
+                std::cout << std::endl;
+            }
+            delete busc;
+            break;
+
     }
     return 1;
 }
