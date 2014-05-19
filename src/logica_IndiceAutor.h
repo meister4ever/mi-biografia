@@ -18,7 +18,6 @@ class IndiceAutor{
         int eliminarTodo();
         int pack();
         int packAppend();
-        int borrar(std::string autor);
     private:
         unsigned int obtenerId(std::string palabra);
         int buscarId(std::string autor);

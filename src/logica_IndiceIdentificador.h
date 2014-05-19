@@ -18,7 +18,6 @@ class IndiceIdentificador{
         int eliminarTodo();
         int pack();
         int packAppend();
-        int borrar(std::string identificador);
     private:
         unsigned int obtenerId(std::string palabra);
         int buscarId(std::string titulo);

@@ -91,43 +91,6 @@ int IndiceTitulo::buscarId(std::string titulo){
     return id;
 }
 
-int IndiceTitulo::borrar(std::string titulo){
-    std::ifstream file;
-    std::ofstream file2;
-    std::string p;
-    int found = 0;
-    unsigned int id =0;
-    file.open(this->titulos.c_str());
-    if(!file.good()){
-        return -1;
-    }
-    TituloId* aui = new TituloId();
-    if(file.good()){
-        file >> *aui;
-        while(!file.eof() && !found){
-            id = aui->getId();
-            const char* c=aui->getTitulo();
-            if(!strcmp(c,titulo.c_str())){
-                found=1;
-                aui->setId(-1);
-                int largo = sizeof(*aui);
-                int posicion = file.tellg();
-                file2.open(this->titulos.c_str());
-                file2.seekp(posicion-largo);
-                file2 << *aui;
-                file2.close();
-            }
-            file >> *aui;
-        }
-    }
-    file.close();
-    delete aui;
-    if(!found){
-        return -1;
-    }
-    return id;
-}
-
 /*unsigned int IndiceTitulo::obtenerIdBinary(std::string titulo){
 return 0;
 }*/

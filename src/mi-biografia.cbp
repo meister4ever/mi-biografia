@@ -46,11 +46,14 @@
 		<Unit filename="domain_Fechaid.cpp" />
 		<Unit filename="domain_Fechaid.h" />
 		<Unit filename="domain_IdentificadorId.cpp" />
-		<Unit filename="domain_IdentificadorId.h" />
 		<Unit filename="domain_IdentificadorOcurrencia.cpp" />
 		<Unit filename="domain_IdentificadorOcurrencia.h" />
 		<Unit filename="domain_IdentificadorReferencias.cpp" />
 		<Unit filename="domain_IdentificadorReferencias.h" />
+		<Unit filename="domain_RTTocurrencia.cpp" />
+		<Unit filename="domain_RTTocurrencia.h" />
+		<Unit filename="domain_RTTreferencia.cpp" />
+		<Unit filename="domain_RTTreferencia.h" />
 		<Unit filename="domain_RegistroGenerico.h" />
 		<Unit filename="domain_TituloId.cpp" />
 		<Unit filename="domain_TituloId.h" />
@@ -95,6 +98,8 @@
 		<Unit filename="logica_IndiceIdentificador.h" />
 		<Unit filename="logica_IndiceTitulo.cpp" />
 		<Unit filename="logica_IndiceTitulo.h" />
+		<Unit filename="logica_RTTgenerator.cpp" />
+		<Unit filename="logica_RTTgenerator.h" />
 		<Unit filename="logica_SortExterno.h" />
 		<Unit filename="logica_Utils.cpp" />
 		<Unit filename="logica_Utils.h" />

@@ -8,7 +8,7 @@
 #include <cstdlib>
 #include <sstream>
 #include <time.h>
-#include <dirent.h>
+#include "dirent.h"
 
 using namespace std;
 

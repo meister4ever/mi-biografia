@@ -1,7 +1,7 @@
 #include "domain_Fechaid.h"
 #include <string.h>
 
-FechaId::FechaId(const char* fecha,  int id){
+FechaId::FechaId(const char* fecha, unsigned int id){
     unsigned int cant = strlen(fecha);
     memcpy(this->fecha,fecha,cant>99 ? 100 : cant+1);
     this->id =id;
@@ -18,12 +18,8 @@ int FechaId::comparar(Comparacion *obj) const{
     return strcmp(this->fecha,aid->getFecha());
 }
 
-int FechaId::getId() const{
+unsigned int FechaId::getId() const{
     return this->id;
-}
-
-void FechaId::setId(int newId) {
-    this->id =newId;
 }
 
 const char* FechaId::getFecha() const{

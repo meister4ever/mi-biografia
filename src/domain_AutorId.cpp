@@ -1,7 +1,7 @@
 #include "domain_AutorId.h"
 #include <string.h>
 
-AutorId::AutorId(const char* autor, int id){
+AutorId::AutorId(const char* autor, unsigned int id){
     unsigned int cant = strlen(autor);
     memcpy(this->autor,autor,cant>99 ? 100 : cant+1);
     this->id =id;
@@ -18,12 +18,8 @@ int AutorId::comparar(Comparacion *obj) const{
     return strcmp(this->autor,aid->getAutor());
 }
 
-int AutorId::getId() const{
+unsigned int AutorId::getId() const{
     return this->id;
-}
-
-void AutorId::setId(int newId) {
-    this->id =newId;
 }
 
 const char* AutorId::getAutor() const{

@@ -1,7 +1,7 @@
 #include "domain_TituloId.h"
 #include <string.h>
 
-TituloId::TituloId(const char* titulo, int id){
+TituloId::TituloId(const char* titulo, unsigned int id){
     unsigned int cant = strlen(titulo);
     memcpy(this->titulo,titulo,cant>99 ? 100 : cant+1);
     this->id =id;
@@ -18,12 +18,8 @@ int TituloId::comparar(Comparacion *obj) const{
     return strcmp(this->titulo,aid->getTitulo());
 }
 
-int TituloId::getId() const{
+unsigned int TituloId::getId() const{
     return this->id;
-}
-
-void TituloId::setId(int newId) {
-    this->id =newId;
 }
 
 const char* TituloId::getTitulo() const{

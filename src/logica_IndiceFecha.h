@@ -18,7 +18,6 @@ class IndiceFecha{
         int eliminarTodo();
         int pack();
         int packAppend();
-        int borrar(std::string fecha);
     private:
         unsigned int obtenerId(std::string palabra);
         int buscarId(std::string fecha);
