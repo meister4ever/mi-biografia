@@ -4,6 +4,7 @@
 #include "logica_Utils.h"
 #include "runtimeConfig.h"
 
+
 Buscador::Buscador() {
     this->dest = destPath();
     this->outName=dest+"salida.out";
@@ -11,14 +12,29 @@ Buscador::Buscador() {
     titulos =  new IndiceTitulo(dest);
     fechas =  new IndiceFecha(dest);
     identificadores = new IndiceIdentificador(dest);
-    rtt = new RTTgenerator(dest);
 }
 
 Buscador::~Buscador(){
     delete autores;
     delete titulos;
     delete identificadores;
-    delete rtt;
+    delete fechas;
+}
+
+void Buscador::borrarPorAutor(std::string autor){
+    autores->borrar(autor);
+}
+
+void Buscador::borrarPorFecha(std::string fecha){
+    fechas->borrar(fecha);
+}
+
+void Buscador::borrarPorIdentificador(std::string identificador){
+    identificadores->borrar(identificador);
+}
+
+void Buscador::borrarPorTitulo(std::string titulo){
+    titulos->borrar(titulo);
 }
 
 int Buscador::buscarPorAutor(std::string autor){
@@ -144,35 +160,6 @@ int Buscador::buscarPorIdentificador(std::string identificador){
     return 0;
 }
 
-int Buscador::buscarPorFrase(std::string frase){
-    std::list<unsigned int> *listilla;
-    listilla = new std::list<unsigned int>;
-    rtt->recuperar(frase,listilla);
-    remove(outName.c_str());
-    if(listilla->size() == 0){
-        cout << "No se encontraron fuentes" << std::endl;
-        delete listilla;
-        return 0;
-    }
-    cout << "Se encontraron las siguientes fuentes" << std::endl;
-    std::ifstream file;
-    std::string fileName = dest + ".master";
-    file.open(fileName.c_str());
-    std::string header;
-    unsigned int largo;
-    for (std::list<unsigned int>::iterator it = listilla->begin();it != listilla->end();it++){
-        file.seekg(*it);
-        file.read((char*)&largo,sizeof(largo));
-        getline(file,header);
-
-        cout << header << std::endl;
-        imprimirFuente(*it);
-    }
-    cout << "Las letras fueron impresas en el archivo salida.out de su carpeta de destino" << std::endl;
-    file.close();
-    delete listilla;
-    return 0;
-}
 
 
 int Buscador::imprimirFuente(unsigned int ref){

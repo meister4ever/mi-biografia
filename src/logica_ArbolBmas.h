@@ -84,12 +84,6 @@ public:
 	// se crea un arbol nuevo en dicho archivo.
 	void abrir(const char* nombre_archivo);
 
-	// Borra un registro en el árbol
-	// PRE: 'clave' es la clave o id con el que se identifica el registro;
-	// 'registro' es un puntero a un almacenador en donde se insertara el
-	// resultado
-	void borrar(uint clave, Tipo & registro);
-
 	// Cierra el arbol
 	// POST: se guardo en el archivo con el que fue abierto la informacion
 	// actual del arbol.
@@ -222,46 +216,6 @@ void ArbolBmas< Tipo >::cerrar()
 	delete this->archivo;
 }
 
-// Borra un registro del árbol
-// PRE: El arbol fue creado y 'clave' es la clave o id con el que se identifica el registro;
-
-template < typename Tipo >
-void ArbolBmas< Tipo >::borrar(uint clave, Tipo & registro)
-{
-	// Corroboramos que se haya creado el arbol
-	if(!this->archivo)
-		throw "ArbolBmas::borrar() ERROR: no se ha abierto el arbol";
-
-	// Eliminamos. Si no hubo underflow, retornamos
-	if(!this->raiz->borrar(clave))
-	{
-		// Caso en que la raiz es un nodo hoja, la cual debe borrarse.
-		if(this->nivel == 0) this->raiz->borrar(this->archivo);
-		return;
-		// Caso en que la raiz no es un nodo hoja.
-    	Nodo< Tipo > * raiz;
-    	raiz = this->raiz;
-			/*
-			 * al ser la raiz un nodo interno y tener solo un
-			 * hijo, no puede seguir siendo raiz
-			 * por lo que su hijo pasará a serlo.
-			 */
-		if (raiz->hijos()->size() == 1) {
-
-			int nuevaClaveRaiz = raiz->hijos()->front();
-			ArbolBmas::actualizar(nuevaClaveRaiz, registro, this->archivo);
-
-            Nodo< Tipo > * nuevaraiz;
-			nuevaraiz = nuevaClaveRaiz;
-			nuevaraiz->setNumBloque(0);
-			delete (this->raiz);
-			this->raiz = nuevaraiz;
-			actualizar(this->raiz);
-		}
-	}
-	this->guardar(this->raiz);
-	return;
-	}
 
 // Inserta un registro nuevo en el árbol
 // PRE: 'clave' es la clave o id con el que se identifica el registro;

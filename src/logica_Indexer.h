@@ -6,8 +6,6 @@
 #include "logica_IndiceTitulo.h"
 #include "logica_IndiceFecha.h"
 #include "logica_IndiceIdentificador.h"
-#include "logica_RTTgenerator.h"
-
 
 class Indexer{
     public:
@@ -22,12 +20,10 @@ class Indexer{
         int indexarTitulo(std::string header, unsigned int textPosition);
         int indexarFecha(std::string header, unsigned int textPosition);
         int indexarIdentificador(std::string header, unsigned int textPosition);
-        int generateRTT(std::string textPath, unsigned int textPosition);
         IndiceAutor *autores;
         IndiceTitulo *titulos;
         IndiceFecha *fechas;
         IndiceIdentificador *identificadores;
-        RTTgenerator *rtt;
         std::string fromPath;
         std::string dest;
         std::string masterName;
