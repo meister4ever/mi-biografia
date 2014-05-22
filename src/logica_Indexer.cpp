@@ -56,14 +56,14 @@ int Indexer::indexarFuentesDesde(int mode){
                 std::cout << "Archivo ya indexado. Descartado" << endl;
             }else{
                 std::cout << "OK." << std::endl;
-                unsigned int textPosition = this->copyToMaster(*it, masterName); //copio al archivo mestro la fuente
+                unsigned int textPosition = this->copyToMaster(*it, masterName); //copio al archivo mestro la cancion
                 std::cout << textPosition;
                 this->indexarAutores(header,textPosition); //agrego ocurrencia de autor
                 this->indexarTitulo(header,textPosition);//agrego ocurrencia de titulo
-                this->indexarFecha(header,textPosition);//agrego ocurrencia de fecha
-                this->indexarIdentificador(header,textPosition);//agrego ocurrencia de identificador
+                this->indexarFecha(header,textPosition);
+                this->indexarIdentificador(header,textPosition);
                 this->generateRTT(*it,textPosition);//agrego ocurrencia de rtt
-                }
+            }
         }
     }
     if(mode){ //verifico si es modo scratch o append
@@ -125,6 +125,7 @@ int Indexer::copyToMaster(std::string from, std::string to){
     dest << source.rdbuf();
     source.close();
     dest.close();
+
     return pos;
 }
 
