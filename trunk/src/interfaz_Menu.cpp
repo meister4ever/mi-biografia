@@ -48,8 +48,8 @@ int Menu::imprimir()
     cout << "11. Borrar Identificador" << endl;
     cout << "12. Borrar Titulo" << endl;
     cout << "13. Listar todos las fuentes indexadas" << endl;
-
-    cout << "14. Salir" << endl<<endl;
+    cout << "14. Ver Estructura" << endl<<endl;
+    cout << "15. Salir" << endl<<endl;
     return 0;
 }
 
@@ -72,7 +72,7 @@ int Menu::ingresarOpcion(int opcion){
     Indexer *in;
     Buscador *busc;
     switch(opcion){
-        case 14:
+        case 15:
             return 0;
         case 1:
             in = new Indexer;
@@ -277,12 +277,20 @@ int Menu::ingresarOpcion(int opcion){
             delete busc;
             break;
 
-        case 13:
+            case 13:
             busc = new Buscador();
             busc->listarTodo();
             delete busc;
             break;
 
+            case 14:
+            std::cout << "Arbol B+ Autores"<< std::endl;
+            Utils::imprimir(destPath()+".arbolAutores");
+            std::cout << "Arbol B+ Fechas"<< std::endl;
+            Utils::imprimir(destPath()+".arbolFechas");
+            std::cout << "Arbol B+ Titulos"<< std::endl;
+            Utils::imprimir(destPath()+".arboltitulos");
+            break;
     }
     return 1;
 }

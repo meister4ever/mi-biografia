@@ -33,7 +33,7 @@ class Utils{
         static void dividirTwtFiles(string fecha);
 
         static string getFecha();
-
+        static void imprimir(std::string ArbolName);
 };
 
 #endif // UTILS_H_INCLUDED

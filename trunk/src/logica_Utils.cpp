@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include "runtimeConfig.h"
 #include "logica_Utils.h"
+#include "logica_ArbolBmas.h"
+#include "domain_RegistroGenerico.h"
+
 using namespace std;
 
 int Utils::splitString(string s, char del, list<string> *ptr){
@@ -327,5 +330,17 @@ string Utils::getFecha()
     string fecha = IntToStr(aTime->tm_mday) + separador + IntToStr(aTime->tm_mon) + separador + IntToStr(aTime->tm_year + 1900); // da anio desde 1900
 
     return fecha;
+}
+
+void Utils::imprimir(std::string ArbolName)
+{
+    ifstream File;
+    string filePathName = destPath() + ArbolName + "_indice.txt";
+    File.open(filePathName.c_str());
+    ArbolBmas<RegistroGenerico> *arbol;
+    arbol=new ArbolBmas<RegistroGenerico>();
+    arbol->abrir(ArbolName.c_str());
+    arbol->imprimir();
+    File.close();
 }
 

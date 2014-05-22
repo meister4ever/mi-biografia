@@ -7,7 +7,7 @@
 VarBuffer::VarBuffer(const unsigned int maxSize)
 {
     this->bufferSize = 0;
-    buffer = new char[maxSize];
+    this->buffer = new char[maxSize];
     this->maxSize=maxSize;
 }
 

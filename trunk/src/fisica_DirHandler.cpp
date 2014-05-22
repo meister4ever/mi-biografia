@@ -1,10 +1,7 @@
-// dirHandler.cpp
-
-
 #include "fisica_DirHandler.h"
 #include <iostream>
 #include <stdio.h>
-#include <string.h>
+#include <sstream>
 using namespace std;
 
 DirHandler::DirHandler(const char* path) {
@@ -26,7 +23,6 @@ void DirHandler::setPath(const char* path){
 
 
 void DirHandler::getFiles(const char* dir){
-
 	DIR *dirStream;
 	struct dirent *dirEntry  = 0;
 	dirStream = opendir(dir);
@@ -37,10 +33,10 @@ void DirHandler::getFiles(const char* dir){
 		if (dirEntry->d_name[0]=='.')
 			continue;
 		if (dirEntry->d_type == DT_DIR){
-			char *tmp=new char[strlen(dir)+strlen(dirEntry->d_name)+1];
-			sprintf(tmp,"%s/%s", dir, dirEntry->d_name);
-			this->setPath(tmp);
-			this->getFiles(tmp);
+			stringstream tmp;
+			tmp << dir << "/" << dirEntry->d_name ;
+			this->setPath(tmp.str().c_str());
+			this->getFiles(tmp.str().c_str());
 		}
 		else{
 			string actualPath = dir;

@@ -1,14 +1,9 @@
-// dirHandler.h
-
-
-
-
 #ifndef DIRHANDLER_H_
 #define DIRHANDLER_H_
 
 #include <string>
 #include <list>
-#include "dirent.h"
+#include <dirent.h>
 using namespace std;
 
 class DirHandler {
