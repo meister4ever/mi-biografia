@@ -13,7 +13,7 @@ IndiceFecha::IndiceFecha(std::string path){
     this->temporalOcurrencias = path + ".ocurrenciasFecha";
     this->fechas = path + ".fechas";
     this->listaRefs = path + ".fechasRef";
-    this->arbolName = path + ".arbolFechas";
+    this->arbolName = path + ".arbolfechas";
     this->arbol = new ArbolBmas<FechaReferencias>();
 }
 

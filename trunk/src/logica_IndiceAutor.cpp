@@ -13,7 +13,7 @@ IndiceAutor::IndiceAutor(std::string path){
     this->temporalOcurrencias = path + ".ocurrenciasAutor";
     this->autores = path + ".autores";
     this->listaRefs = path + ".autoresRef";
-    this->arbolName = path + ".arbolAutores";
+    this->arbolName = path + ".arbolautores";
     this->arbol = new ArbolBmas<AutorReferencias>();
 
 }

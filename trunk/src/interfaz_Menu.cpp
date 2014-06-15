@@ -107,7 +107,7 @@ int Menu::ingresarOpcion(int opcion){
             break;
         case 3:
             busc = new Buscador();
-            cout << "Ingrese el titulo a buscar" << endl;
+            cout << "Ingrese el titulo a buscar" << std::endl;
             std::cin.ignore();
             std::getline(std::cin, text);
 
@@ -127,7 +127,7 @@ int Menu::ingresarOpcion(int opcion){
             break;
         case 4:
             busc = new Buscador();
-            cout << "Ingrese el fecha a buscar" << endl;
+            cout << "Ingrese el fecha a buscar" << std::endl;
             std::cin.ignore();
             std::getline(std::cin, text);
 
@@ -148,7 +148,7 @@ int Menu::ingresarOpcion(int opcion){
 
         case 5:
             busc = new Buscador();
-            cout << "Ingrese el identificador a buscar" << endl;
+            cout << "Ingrese el identificador a buscar" << std::endl;
             std::cin.ignore();
             std::getline(std::cin, text);
 
@@ -170,7 +170,7 @@ int Menu::ingresarOpcion(int opcion){
 
         case 6:
             busc = new Buscador();
-            cout << "Ingrese la frase a buscar" << endl;
+            cout << "Ingrese la frase a buscar" << std::endl;
             std::cin.ignore();
             std::getline(std::cin, text);
 
@@ -284,12 +284,15 @@ int Menu::ingresarOpcion(int opcion){
             break;
 
             case 14:
-            std::cout << "Arbol B+ Autores"<< std::endl;
-            Utils::imprimir(destPath()+".arbolAutores");
-            std::cout << "Arbol B+ Fechas"<< std::endl;
-            Utils::imprimir(destPath()+".arbolFechas");
+
             std::cout << "Arbol B+ Titulos"<< std::endl;
             Utils::imprimir(destPath()+".arboltitulos");
+
+            std::cout << "Arbol B+ Autores"<< std::endl;
+            Utils::imprimir(destPath()+".arbolautores");
+
+            std::cout << "Arbol B+ Fechas"<< std::endl;
+            Utils::imprimir(destPath()+".arbolfechas");
             break;
     }
     return 1;
