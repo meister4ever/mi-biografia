@@ -199,7 +199,7 @@ void Utils::dividirRss(string fileName, int contador, string fecha) {
     inFile.open(filePathName.c_str());
     string marcador1 = "Title:";
     string marcador2 = "Description:";
-    string separador = " - ";
+    string separador = "-";
     string salidaStr;
 
     ofstream salida;
@@ -240,7 +240,7 @@ void Utils::dividirRssFiles (string fecha) {
     int contador = 0;
     while ((ent = readdir (dir)) != NULL) {
         comp = ent->d_name;
-        if (comp.compare("..")!=0) {
+      if (comp.compare("..")!=0 && comp.compare(".")!=0) {
             dividirRss(ent->d_name, contador, fecha);
             contador++;
         }
@@ -312,7 +312,7 @@ void Utils::dividirTwtFiles (string fecha) {
     string comp;
     while ((ent = readdir (dir)) != NULL) {
       comp = ent->d_name;
-      if (comp.compare("..")!=0) {
+      if (comp.compare("..")!=0 && comp.compare(".")!=0) {
         dividirTwt(ent->d_name, contador, fecha);
         contador++;
       }
@@ -335,7 +335,7 @@ string Utils::getFecha()
 void Utils::imprimir(std::string ArbolName)
 {
     ifstream File;
-    string filePathName = destPath() + ArbolName + "_indice.txt";
+    string filePathName = destPath() + ArbolName;
     File.open(filePathName.c_str());
     ArbolBmas<RegistroGenerico> *arbol;
     arbol=new ArbolBmas<RegistroGenerico>();

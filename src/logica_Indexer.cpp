@@ -56,11 +56,11 @@ int Indexer::indexarFuentesDesde(int mode){
                 std::cout << "Archivo ya indexado. Descartado" << endl;
             }else{
                 std::cout << "OK." << std::endl;
-                unsigned int textPosition = this->copyToMaster(*it, masterName); //copio al archivo mestro la cancion
+                unsigned int textPosition = this->copyToMaster(*it, masterName); //copio al archivo maestro de la fuente
                 std::cout << textPosition;
                 this->indexarAutores(header,textPosition); //agrego ocurrencia de autor
                 this->indexarTitulo(header,textPosition);//agrego ocurrencia de titulo
-                this->indexarFecha(header,textPosition);
+                this->indexarFecha(header,textPosition);//agrego ocurrencia de la fecha
                 this->indexarIdentificador(header,textPosition);
                 this->generateRTT(*it,textPosition);//agrego ocurrencia de rtt
             }

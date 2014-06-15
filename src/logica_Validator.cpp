@@ -19,7 +19,7 @@ int Validator::validateHeader(std::string header){
     std::list<std::string> *lista = new std::list<std::string>;
     Utils::splitString(header,'-',lista);
     int size = lista->size();
-    if( size < 3 || size > 6){
+    if( size < 4 || size > 5){
         delete lista;
         return 0;
     }
