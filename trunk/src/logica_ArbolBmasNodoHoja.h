@@ -9,6 +9,10 @@
 #include "fisica_ArchivoBloques.h"
 #include "logica_ArbolBmasNodo.h"
 #include "lib_ListaFija.h"
+#include <iostream>
+#include <sstream>
+#include <fstream>
+#include <stdio.h>
 
 
 // Definicion de tipo uint para utilizar nombre mas corto
@@ -358,7 +362,34 @@ template < typename Tipo >
 void NodoHoja< Tipo >::imprimir(uint& nivelDelArbol,
 	ArchivoBloques *archivo)
 {
+    // Tabulamos de acuerdo al nivel
+    int tabs = nivelDelArbol - this->nivel;
+    //std::
+    ofstream entrada("Estructura.txt",ios::out|ios::app);
+    if (entrada.fail())
+    {
+      cout<<"ERROR AL ABRIR ARCHIVO"<<endl;
+    }
+    else
+    {
+      //entrada<<"prueba1"<< std::endl;
+      entrada<< std::string(tabs, '\t');
+      //entrada<<"prueba2"<< std::endl;
+      entrada<< this->nivel << ", " << this->numBloque << ": ";
+      //entrada<<"prueba3"<< std::endl;
+      // Iteramos sobre las claves
+      for(size_t i = 0; i < this->claves->tamanio(); i++)
+		entrada<<  "(" << (*this->claves)[i] << ")";
+      //entrada<<"prueba4"<< std::endl;
+	  entrada<< this->nodoHermano << std::endl;
+	  //entrada<<"prueba5"<< std::endl;
+    }
+
+    entrada.close();
+
+    //////////////////////////////////////////////////////////////
 	// Tabulamos de acuerdo al nivel
+	/*
 	int tabs = nivelDelArbol - this->nivel;
 	std::cout << std::string(tabs, '\t');
 	std::cout << this->nivel << ", " << this->numBloque << ": ";
@@ -368,7 +399,7 @@ void NodoHoja< Tipo >::imprimir(uint& nivelDelArbol,
 		std::cout << "(" << (*this->claves)[i] << ")";
 
 	std::cout << this->nodoHermano << std::endl;
-
+    */
 	return;
 }
 
