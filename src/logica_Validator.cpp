@@ -7,7 +7,7 @@
 int Validator::validateOpcion(std::string op){
     std::stringstream s(op);
     int i;
-    if ( (s >> i).fail() || (i<0 || i>15)){
+    if ( (s >> i).fail() || (i<0 || i>16)){
         return 0;
     }else{
         return i;

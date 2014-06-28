@@ -9,6 +9,7 @@
 #include <sstream>
 #include <time.h>
 #include <dirent.h>
+#include "tipos.h"
 
 using namespace std;
 
@@ -37,5 +38,11 @@ class Utils{
         static void imprimir1(std::string ArbolName);
         static void imprimir2(std::string ArbolName);
 };
+
+byte bin2char(string sSecuencia);
+string char2bin(byte cData);
+
+int bin2int(string sSecuencia);
+string int2bin(int iData);
 
 #endif // UTILS_H_INCLUDED
