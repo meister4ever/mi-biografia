@@ -9,7 +9,6 @@
 #include "lz77.h"
 #include "lz78.h"
 
-
 using namespace std;
 
 Menu::Menu(){ }
@@ -313,6 +312,7 @@ int Menu::ingresarOpcion(int opcion){
             tmp2.readFile(sFileIn);
             tmp2.compress(sFileOutLz78);
             std::cout << "Se comprimio el archivo Estructura.txt (../destino)"<< std::endl;
+
             }
             break;
     }
