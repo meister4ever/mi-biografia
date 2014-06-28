@@ -6,6 +6,8 @@
 #include "logica_Utils.h"
 #include "runtimeConfig.h"
 #include "logica_Descargador.h"
+#include "lz77.h"
+#include "lz78.h"
 
 
 using namespace std;
@@ -48,31 +50,18 @@ int Menu::imprimir()
     cout << "11. Borrar Identificador" << endl;
     cout << "12. Borrar Titulo" << endl;
     cout << "13. Listar todos las fuentes indexadas" << endl;
-    cout << "14. Ver Estructura" << endl<<endl;
-    cout << "15. Salir" << endl<<endl;
+    cout << "14. Ver Estructura" <<endl;
+    cout << "15. Comprimir" <<endl;
+    cout << "16. Salir" << endl<<endl;
     return 0;
 }
-
-/*Obtener nuevos Twits
-Obtener nuevos RSSs
-Buscar por Autor
-Buscar por Título
-Buscar por Fecha
-Buscar por Identificador
-Eliminar todo lo contenido
-Eliminar documento por Identificador
-Eliminar documento por Fecha
-Eliminar documento por Menor a Fecha
-Eliminar documento por Mayor a Fecha
-Ver Estructura*/
-
 
 int Menu::ingresarOpcion(int opcion){
     string text;
     Indexer *in;
     Buscador *busc;
     switch(opcion){
-        case 15:
+        case 16:
             return 0;
         case 1:
             in = new Indexer;
@@ -284,22 +273,20 @@ int Menu::ingresarOpcion(int opcion){
             break;
 
             case 14:
-
+            {
             string destino = destPath()+"Estructura.txt";
             std::remove(destino.c_str());
-
             ofstream entrada;
+
             entrada.open(destino.c_str(), ios_base::app);
             entrada << "Arbol B+ Títulos"<< std::endl;
             entrada.close();
-
             std::cout << "Se guardó en Estructura.txt (../destino) Arbol B+ Titulos"<< std::endl;
             Utils::imprimir(".arboltitulos");
 
             entrada.open(destino.c_str(), ios_base::app);
             entrada << "Arbol B+ Autores"<< std::endl;
             entrada.close();
-
             std::cout << "Se guardó en Estructura.txt (../destino) Arbol B+ Autores"<< std::endl;
             Utils::imprimir(".arbolautores");
 
@@ -309,6 +296,24 @@ int Menu::ingresarOpcion(int opcion){
 
             std::cout << "Se guardó en Estructura.txt (../destino) Arbol B+ Fechas"<< std::endl;
             Utils::imprimir(".arbolfechas");
+            }
+            break;
+
+            case 15:
+            {
+            string sFileOutLz77;
+            string sFileOutLz78;
+            string sFileIn;
+            sFileIn = destPath()+"Estructura.txt";
+            lz77 tmp;
+            lz78 tmp2;
+            if (sFileOutLz77 == "") sFileOutLz77 = sFileIn + ".lz77";
+            if (sFileOutLz78 == "") sFileOutLz78 = sFileIn + ".lz78";
+            tmp.compress(sFileIn,sFileOutLz77);
+            tmp2.readFile(sFileIn);
+            tmp2.compress(sFileOutLz78);
+            std::cout << "Se comprimio el archivo Estructura.txt (../destino)"<< std::endl;
+            }
             break;
     }
     return 1;
