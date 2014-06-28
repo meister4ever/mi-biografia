@@ -2734,7 +2734,7 @@
 	"fisica_VarBuffer.h"
 	<string.h>
 
-1403923321 source:/home/sebastian/Escritorio/mi-biografia/src/interfaz_Menu.cpp
+1403989583 source:/home/sebastian/Escritorio/mi-biografia/src/interfaz_Menu.cpp
 	<iostream>
 	"interfaz_Menu.h"
 	"logica_Validator.h"
@@ -2743,6 +2743,7 @@
 	"logica_Utils.h"
 	"runtimeConfig.h"
 	"logica_Descargador.h"
+	"lz78.h"
 
 1402856801 /home/sebastian/Escritorio/mi-biografia/src/interfaz_Menu.h
 	<iostream>
@@ -2838,7 +2839,7 @@
 	"logica_IndiceIdentificador.h"
 	"logica_RTTgenerator.h"
 
-1403912045 /home/sebastian/Escritorio/mi-biografia/src/logica_Utils.h
+1403990354 /home/sebastian/Escritorio/mi-biografia/src/logica_Utils.h
 	<iostream>
 	<list>
 	<string>
@@ -2847,6 +2848,7 @@
 	<sstream>
 	<time.h>
 	<dirent.h>
+	"tipos.h"
 
 1402856801 /home/sebastian/Escritorio/mi-biografia/src/logica_Descargador.h
 	<iostream>
@@ -2963,7 +2965,7 @@
 	"logica_SortExterno.h"
 	"logica_Utils.h"
 
-1403923153 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Utils.cpp
+1403990416 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Utils.cpp
 	<iostream>
 	<sstream>
 	<cstdio>
@@ -2977,7 +2979,7 @@
 	"domain_FechaReferencias.h"
 	"domain_AutorReferencias.h"
 
-1403908018 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Validator.cpp
+1403967687 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Validator.cpp
 	"logica_Validator.h"
 	<iostream>
 	<sstream>
@@ -3823,4 +3825,25 @@
 	<fstream>
 	<iostream>
 	<cmath>
+
+1403968221 /home/sebastian/Escritorio/mi-biografia/src/tipos.h
+	<map>
+	<list>
+	<vector>
+	<fstream>
+	<iostream>
+	<cmath>
+
+1403991765 source:/home/sebastian/Escritorio/mi-biografia/src/lz77.cpp
+	"lz77.h"
+
+1403991764 /home/sebastian/Escritorio/mi-biografia/src/lz77.h
+	"tipos.h"
+
+1403991766 source:/home/sebastian/Escritorio/mi-biografia/src/lz78.cpp
+	"lz78.h"
+	"logica_Utils.h"
+
+1403991765 /home/sebastian/Escritorio/mi-biografia/src/lz78.h
+	"tipos.h"
 
