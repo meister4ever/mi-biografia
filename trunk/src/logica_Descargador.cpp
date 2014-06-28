@@ -63,7 +63,7 @@ bool Descargador::descargarRss(string dirFuenteRss)
     } else
         return false;
 
-    string separador = "-";
+    string separador = "╗";
     size_t posSep;
     //cambia el separador porque se usa para el parser
     posSep = nombre.find_first_of(separador);

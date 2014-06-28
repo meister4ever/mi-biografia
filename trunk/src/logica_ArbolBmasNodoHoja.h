@@ -359,19 +359,21 @@ void NodoHoja< Tipo >::guardar(ArchivoBloques *archivo)
 // Se imprime el nodo en la salida estandar con su contenido.
 // FORMATO: "[nivel], [numero_bloque]: ([clave1])...([claveN])[nodo_hermano]
 template < typename Tipo >
-void NodoHoja< Tipo >::imprimir(uint& nivelDelArbol,
-	ArchivoBloques *archivo)
+void NodoHoja< Tipo >::imprimir(uint& nivelDelArbol, ArchivoBloques *archivo)
 {
-    // Tabulamos de acuerdo al nivel
-    int tabs = nivelDelArbol - this->nivel;
-    //std::
-    ofstream entrada("Estructura.txt",ios::out|ios::app);
+    ofstream entrada;
+    string destino = destPath()+"Estructura.txt";
+    entrada.open(destino.c_str(), ios_base::app);
     if (entrada.fail())
     {
       cout<<"ERROR AL ABRIR ARCHIVO"<<endl;
     }
     else
     {
+
+    // Tabulamos de acuerdo al nivel
+    int tabs = nivelDelArbol - this->nivel;
+
       //entrada<<"prueba1"<< std::endl;
       entrada<< std::string(tabs, '\t');
       //entrada<<"prueba2"<< std::endl;
@@ -379,26 +381,28 @@ void NodoHoja< Tipo >::imprimir(uint& nivelDelArbol,
       //entrada<<"prueba3"<< std::endl;
       // Iteramos sobre las claves
       for(size_t i = 0; i < this->claves->tamanio(); i++)
-		entrada<<  "(" << (*this->claves)[i] << ")";
+                entrada<<  "(" << (*this->claves)[i] << ")";
       //entrada<<"prueba4"<< std::endl;
-	  entrada<< this->nodoHermano << std::endl;
-	  //entrada<<"prueba5"<< std::endl;
+          entrada<< this->nodoHermano << std::endl;
+          //entrada<<"prueba5"<< std::endl;
     }
 
     entrada.close();
 
+
     //////////////////////////////////////////////////////////////
-	// Tabulamos de acuerdo al nivel
-	/*
-	int tabs = nivelDelArbol - this->nivel;
-	std::cout << std::string(tabs, '\t');
-	std::cout << this->nivel << ", " << this->numBloque << ": ";
+        // Tabulamos de acuerdo al nivel
 
-	// Iteramos sobre las claves
-	for(size_t i = 0; i < this->claves->tamanio(); i++)
-		std::cout << "(" << (*this->claves)[i] << ")";
+    /*    int tabs = nivelDelArbol - this->nivel;
+        std::cout << std::string(tabs, '\t');
+        std::cout << this->nivel << ", " << this->numBloque << ": ";
 
-	std::cout << this->nodoHermano << std::endl;
+        // Iteramos sobre las claves
+        for(size_t i = 0; i < this->claves->tamanio(); i++)
+                std::cout << "(" << (*this->claves)[i] << ")";
+
+        std::cout << this->nodoHermano << std::endl;
+
     */
 	return;
 }

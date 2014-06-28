@@ -106,6 +106,8 @@
 		<Unit filename="logica_Utils.h" />
 		<Unit filename="logica_Validator.cpp" />
 		<Unit filename="logica_Validator.h" />
+		<Unit filename="lz77.cpp" />
+		<Unit filename="lz77.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="parametros.conf" />
 		<Unit filename="runtimeConfig.cpp" />

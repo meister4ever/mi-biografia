@@ -2716,7 +2716,7 @@
 	<iostream>
 	<fstream>
 
-1402856801 source:/home/sebastian/Escritorio/mi-biografia/src/fisica_DirHandler.cpp
+1403904996 source:/home/sebastian/Escritorio/mi-biografia/src/fisica_DirHandler.cpp
 	"fisica_DirHandler.h"
 	<iostream>
 	<stdio.h>
@@ -2734,7 +2734,7 @@
 	"fisica_VarBuffer.h"
 	<string.h>
 
-1402862044 source:/home/sebastian/Escritorio/mi-biografia/src/interfaz_Menu.cpp
+1403923321 source:/home/sebastian/Escritorio/mi-biografia/src/interfaz_Menu.cpp
 	<iostream>
 	"interfaz_Menu.h"
 	"logica_Validator.h"
@@ -2785,16 +2785,20 @@
 	<iostream>
 	<fstream>
 
-1402856801 /home/sebastian/Escritorio/mi-biografia/src/logica_ArbolBmasNodoHoja.h
+1403922623 /home/sebastian/Escritorio/mi-biografia/src/logica_ArbolBmasNodoHoja.h
 	"fisica_ArchivoBloques.h"
 	"logica_ArbolBmasNodo.h"
 	"lib_ListaFija.h"
+	<iostream>
+	<sstream>
+	<fstream>
+	<stdio.h>
 
 1402856801 /home/sebastian/Escritorio/mi-biografia/src/lib_ListaFija.h
 	<string>
 	"fisica_SerialBuffer.h"
 
-1402856801 /home/sebastian/Escritorio/mi-biografia/src/logica_ArbolBmasNodoInterno.h
+1403922619 /home/sebastian/Escritorio/mi-biografia/src/logica_ArbolBmasNodoInterno.h
 	"fisica_ArchivoBloques.h"
 	"logica_ArbolBmasNodo.h"
 	"logica_ArbolBmasNodoHoja.h"
@@ -2834,7 +2838,7 @@
 	"logica_IndiceIdentificador.h"
 	"logica_RTTgenerator.h"
 
-1402856801 /home/sebastian/Escritorio/mi-biografia/src/logica_Utils.h
+1403912045 /home/sebastian/Escritorio/mi-biografia/src/logica_Utils.h
 	<iostream>
 	<list>
 	<string>
@@ -2864,11 +2868,11 @@
 	"logica_Utils.h"
 	"runtimeConfig.h"
 
-1402867713 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Descargador.cpp
+1403569356 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Descargador.cpp
 	<iostream>
 	"logica_Descargador.h"
 
-1402856801 source:/home/sebastian/Escritorio/mi-biografia/src/logica_FileHandler.cpp
+1403569460 source:/home/sebastian/Escritorio/mi-biografia/src/logica_FileHandler.cpp
 	"logica_FileHandler.h"
 	<iostream>
 	<fstream>
@@ -2884,7 +2888,7 @@
 1402856801 /home/sebastian/Escritorio/mi-biografia/src/logica_HashExtensible.h
 	<string>
 
-1402860620 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Indexer.cpp
+1403900419 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Indexer.cpp
 	<iostream>
 	<fstream>
 	<sstream>
@@ -2938,7 +2942,7 @@
 	<iostream>
 	<climits>
 
-1402856801 source:/home/sebastian/Escritorio/mi-biografia/src/logica_IndiceTitulo.cpp
+1403911391 source:/home/sebastian/Escritorio/mi-biografia/src/logica_IndiceTitulo.cpp
 	"logica_IndiceTitulo.h"
 	"logica_SortExterno.h"
 	"domain_TituloId.h"
@@ -2950,7 +2954,7 @@
 	<iostream>
 	<climits>
 
-1402856801 source:/home/sebastian/Escritorio/mi-biografia/src/logica_RTTgenerator.cpp
+1403900396 source:/home/sebastian/Escritorio/mi-biografia/src/logica_RTTgenerator.cpp
 	<string>
 	<fstream>
 	"logica_RTTgenerator.h"
@@ -2959,17 +2963,21 @@
 	"logica_SortExterno.h"
 	"logica_Utils.h"
 
-1402867734 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Utils.cpp
+1403923153 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Utils.cpp
 	<iostream>
 	<sstream>
+	<cstdio>
 	<fstream>
 	<stdio.h>
 	"runtimeConfig.h"
 	"logica_Utils.h"
 	"logica_ArbolBmas.h"
 	"domain_RegistroGenerico.h"
+	"domain_TituloReferencias.h"
+	"domain_FechaReferencias.h"
+	"domain_AutorReferencias.h"
 
-1402868142 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Validator.cpp
+1403908018 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Validator.cpp
 	"logica_Validator.h"
 	<iostream>
 	<sstream>

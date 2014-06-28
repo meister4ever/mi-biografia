@@ -17,7 +17,7 @@ class Utils{
         static void dividirRss(string fileName, int contador, string fecha);
         static void dividirTwt(string fileName, int contador, string fecha);
     public:
-        static int splitString(string s, char delimitador, list<string> *ptr);
+        static int splitString(string s, string delimitador, list<string> *ptr);
         static string getClaveFromHeader(string header);
         static int getAutoresFromHeader(string s, list<string>*);
         static int getTitulosFromHeader(string s, list<string>*);
@@ -34,6 +34,8 @@ class Utils{
 
         static string getFecha();
         static void imprimir(std::string ArbolName);
+        static void imprimir1(std::string ArbolName);
+        static void imprimir2(std::string ArbolName);
 };
 
 #endif // UTILS_H_INCLUDED
