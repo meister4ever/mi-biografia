@@ -313,7 +313,7 @@ int RTTgenerator::recuperar(std::string frase, std::list<unsigned int> *lista){
         return 0;
     }
     std::list<std::string> *palabras = new std::list<std::string>;
-    Utils::splitString(frase,' ',palabras);
+    Utils::splitString(frase," ",palabras);
     std::string palabra;
     unsigned int idPalabra;
     int id = 0;

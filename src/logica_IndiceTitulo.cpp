@@ -15,7 +15,6 @@ IndiceTitulo::IndiceTitulo(std::string path){
     this->listaRefs = path + ".titulosRef";
     this->arbolName = path + ".arboltitulos";
     this->arbol = new ArbolBmas<TituloReferencias>();
-
 }
 
 IndiceTitulo::~IndiceTitulo(){

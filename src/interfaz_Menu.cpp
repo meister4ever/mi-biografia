@@ -285,17 +285,30 @@ int Menu::ingresarOpcion(int opcion){
 
             case 14:
 
-            std::cout << "Arbol B+ Titulos"<< std::endl;
-            Utils::imprimir(destPath()+".arboltitulos");
+            string destino = destPath()+"Estructura.txt";
+            std::remove(destino.c_str());
 
-            /*
-            std::cout << "Arbol B+ Autores"<< std::endl;
-            Utils::imprimir(destPath()+".arbolautores");
+            ofstream entrada;
+            entrada.open(destino.c_str(), ios_base::app);
+            entrada << "Arbol B+ Títulos"<< std::endl;
+            entrada.close();
 
-            std::cout << "Arbol B+ Fechas"<< std::endl;
-            Utils::imprimir(destPath()+".arbolfechas");
-            */
+            std::cout << "Se guardó en Estructura.txt (../destino) Arbol B+ Titulos"<< std::endl;
+            Utils::imprimir(".arboltitulos");
 
+            entrada.open(destino.c_str(), ios_base::app);
+            entrada << "Arbol B+ Autores"<< std::endl;
+            entrada.close();
+
+            std::cout << "Se guardó en Estructura.txt (../destino) Arbol B+ Autores"<< std::endl;
+            Utils::imprimir(".arbolautores");
+
+            entrada.open(destino.c_str(), ios_base::app);
+            entrada << "Arbol B+ Fechas"<< std::endl;
+            entrada.close();
+
+            std::cout << "Se guardó en Estructura.txt (../destino) Arbol B+ Fechas"<< std::endl;
+            Utils::imprimir(".arbolfechas");
             break;
     }
     return 1;

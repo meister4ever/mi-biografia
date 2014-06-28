@@ -1,34 +1,46 @@
 #include <iostream>
 #include <sstream>
+#include <cstdio>
 #include <fstream>
 #include <stdio.h>
 #include "runtimeConfig.h"
 #include "logica_Utils.h"
 #include "logica_ArbolBmas.h"
 #include "domain_RegistroGenerico.h"
+#include "domain_TituloReferencias.h"
+#include "domain_FechaReferencias.h"
+#include "domain_AutorReferencias.h"
+
 
 using namespace std;
 
-int Utils::splitString(string s, char del, list<string> *ptr){
-    string s2;
-    istringstream is(s);
-    while (getline(is,s2,del)){
-        ptr->push_back(s2);
-    }
+int Utils::splitString(string s, string del, list<string> *ptr){
+
+std::string delimiter = del;
+
+size_t pos = 0;
+std::string token;
+while ((pos = s.find(delimiter)) != std::string::npos) {
+    token = s.substr(0, pos);
+    ptr->push_back(token);
+    s.erase(0, pos + delimiter.length());
+}
+    ptr->push_back(s);
     return 0;
 }
 
+
 string Utils::getClaveFromHeader(string header){
     list<string> *ptr = new list<string>;
-    Utils::splitString(header,'-',ptr);
+    Utils::splitString(header,"╗",ptr);
     ostringstream s;
-    s << Utils::uniformizarString(ptr->front()) << "-";
+    s << Utils::uniformizarString(ptr->front()) << "╗";
     ptr->pop_front();
     ptr->pop_front();
     if(ptr->size() == 3){
         ptr->pop_front();
     }
-    s << Utils::uniformizarString(ptr->front()) << "-";
+    s << Utils::uniformizarString(ptr->front()) << "╗";
     ptr->pop_front();
     s << Utils::uniformizarString(ptr->front());
     delete ptr;
@@ -37,7 +49,7 @@ string Utils::getClaveFromHeader(string header){
 
 int Utils::getAutoresFromHeader(string header, list<string>* lista){
     list<string> *ptr = new list<string>;
-    Utils::splitString(header,'-',ptr);
+    Utils::splitString(header,"╗",ptr);
     ptr->pop_front();
     string s = ptr->front();
     delete ptr;
@@ -51,9 +63,11 @@ int Utils::getAutoresFromHeader(string header, list<string>* lista){
 
 int Utils::getTitulosFromHeader(string header, list<string>* lista){
     list<string> *ptr = new list<string>;
-    Utils::splitString(header,'-',ptr);
-    ptr->pop_back();
-    string s = ptr->back();
+    Utils::splitString(header,"╗",ptr);
+    ptr->pop_front();
+    ptr->pop_front();
+    ptr->pop_front();
+    string s = ptr->front();
     delete ptr;
     string s2;
     istringstream is(s);
@@ -65,10 +79,10 @@ int Utils::getTitulosFromHeader(string header, list<string>* lista){
 
 int Utils::getFechasFromHeader(string header, list<string>* lista){
     list<string> *ptr = new list<string>;
-    Utils::splitString(header,'-',ptr);
-    ptr->pop_back();
-    ptr->pop_back();
-    string s = ptr->back();
+    Utils::splitString(header,"╗",ptr);
+    ptr->pop_front();
+    ptr->pop_front();
+    string s = ptr->front();
     delete ptr;
     string s2;
     istringstream is(s);
@@ -80,7 +94,7 @@ int Utils::getFechasFromHeader(string header, list<string>* lista){
 
 int Utils::getIdentificadorFromHeader(string header, list<string>* lista){
     list<string> *ptr = new list<string>;
-    Utils::splitString(header,'-',ptr);
+    Utils::splitString(header,"╗",ptr);
     string s = ptr->front();
     delete ptr;
     string s2;
@@ -93,7 +107,7 @@ int Utils::getIdentificadorFromHeader(string header, list<string>* lista){
 
 string Utils::getTituloFromHeader(string header){
     list<string> *ptr = new list<string>;
-    Utils::splitString(header,'-',ptr);
+    Utils::splitString(header,"╗",ptr);
     ptr->pop_front();
     if(ptr->size() == 3){
         ptr->pop_front();
@@ -199,7 +213,7 @@ void Utils::dividirRss(string fileName, int contador, string fecha) {
     inFile.open(filePathName.c_str());
     string marcador1 = "Title:";
     string marcador2 = "Description:";
-    string separador = "-";
+    string separador = "╗";
     string salidaStr;
 
     ofstream salida;
@@ -234,8 +248,6 @@ void Utils::dividirRssFiles (string fecha) {
   struct dirent *ent;
   string dirFull = sourcePath() + "/fuentesRss";
   if ((dir = opendir (dirFull.c_str())) != NULL) {
-    readdir (dir);
-    readdir (dir);
     string comp;
     int contador = 0;
     while ((ent = readdir (dir)) != NULL) {
@@ -262,7 +274,7 @@ void Utils::dividirTwt(string fileName, int contador, string fecha) {
 
     inFile.open(filePathName.c_str(), ifstream::in);
     string marcador = "TP_DATOS";
-    string separador = "-";
+    string separador = "╗";
 
     while (!inFile.eof() && line.compare(marcador)!=0)
       getline(inFile,line);
@@ -291,7 +303,7 @@ void Utils::dividirTwt(string fileName, int contador, string fecha) {
 	  size_t pos2 = line.find_first_of(": ",pos1+1);
 
 	if ((pos1!=string::npos) && (pos2!=string::npos))
-	  salida << line.substr(pos1+1, pos2-pos1-1);
+	  salida << line.substr(pos1+1, pos2-pos1-1) + separador;
 
 	salida << line.substr(pos_fin+1) << endl;
       }
@@ -307,7 +319,6 @@ void Utils::dividirTwtFiles (string fecha) {
   struct dirent *ent;
   string dirFull = sourcePath() + "/fuentesTwt";
   if ((dir = opendir (dirFull.c_str())) != NULL) {
-    readdir (dir);
     int contador = 0;
     string comp;
     while ((ent = readdir (dir)) != NULL) {
@@ -334,13 +345,29 @@ string Utils::getFecha()
 
 void Utils::imprimir(std::string ArbolName)
 {
-    ifstream File;
     string filePathName = destPath() + ArbolName;
-    File.open(filePathName.c_str());
-    ArbolBmas<RegistroGenerico> *arbol;
-    arbol=new ArbolBmas<RegistroGenerico>();
-    arbol->abrir(ArbolName.c_str());
+    ArbolBmas<TituloReferencias>* arbol= new ArbolBmas<TituloReferencias>();
+    arbol->abrir(filePathName.c_str());
     arbol->imprimir();
-    File.close();
+    arbol->cerrar();
 }
+
+void Utils::imprimir1(std::string ArbolName)
+{
+    string filePathName = destPath() + ArbolName;
+    ArbolBmas<AutorReferencias>* arbol= new ArbolBmas<AutorReferencias>();
+    arbol->abrir(filePathName.c_str());
+    arbol->imprimir();
+    arbol->cerrar();
+}
+
+void Utils::imprimir2(std::string ArbolName)
+{
+    string filePathName = destPath() + ArbolName;
+    ArbolBmas<FechaReferencias>* arbol= new ArbolBmas<FechaReferencias>();
+    arbol->abrir(filePathName.c_str());
+    arbol->imprimir();
+    arbol->cerrar();
+}
+
 

@@ -400,19 +400,30 @@ template < typename Tipo >
 void NodoInterno< Tipo >::imprimir(uint& nivelDelArbol,
 	ArchivoBloques *archivo)
 {
+    ofstream entrada;
+    string destino = destPath()+"Estructura.txt";
+    entrada.open(destino.c_str(), ios_base::app);
+    if (entrada.fail())
+    {
+      cout<<"ERROR AL ABRIR ARCHIVO"<<endl;
+    }
+    else
+    {
+
 	// Tabulamos de acuerdo al nivel
 	int tabs = nivelDelArbol - this->nivel;
-	std::cout << std::string(tabs, '\t');
-	std::cout << this->nivel << ", " << this->numBloque << ": ";
+
+	entrada << std::string(tabs, '\t');
+	entrada << this->nivel << ", " << this->numBloque << ": ";
 
 	// Iteramos sobre las claves
 	for(size_t i = 0; i < this->claves->tamanio(); i++)
 	{
-		std::cout << (*this->hijos)[i];
-		std::cout << "(" << (*this->claves)[i] << ")";
+		entrada << (*this->hijos)[i];
+		entrada << "(" << (*this->claves)[i] << ")";
 	}
 
-	std::cout << (*this->hijos)[this->hijos->tamanio() - 1] << std::endl;
+	entrada << (*this->hijos)[this->hijos->tamanio() - 1] << std::endl;
 
 	// Imprimimos hijos
 	for(size_t i = 0; i < this->hijos->tamanio(); i++)
@@ -429,6 +440,7 @@ void NodoInterno< Tipo >::imprimir(uint& nivelDelArbol,
 		hijo->imprimir(nivelDelArbol, archivo);
 
 		delete hijo;
+	}
 	}
 }
 
