@@ -5,7 +5,7 @@
 #include <string.h>
 #include "logica_SortExterno.h"
 #include "logica_Utils.h"
-
+#include "lz78.h"
 
 
 RTTgenerator::RTTgenerator(std::string path){
@@ -146,6 +146,15 @@ int RTTgenerator::pack(){
             delete listaDocs;
         }
         arbol->cerrar();
+
+            string sFileOutLz78;
+            lz78 tmp;
+            if (sFileOutLz78 == "") sFileOutLz78 = arbolName + ".lz78";
+            tmp.readFile(arbolName);
+            tmp.compress(sFileOutLz78);
+            std::cout << "Se comprimio el archivo .arbolRTT (../destino)"<< std::endl;
+            std::remove(arbolName.c_str());
+
         remove(this->temporalOcurrencias.c_str());
         std::cout << "OK" << std::endl;
     }
@@ -212,6 +221,17 @@ int RTTgenerator::packAppend(){
             delete listaDocs;
         }
         arbol->cerrar();
+
+        string sFileOutLz78;
+            lz78 tmp;
+            if (sFileOutLz78 == "") sFileOutLz78 = arbolName + ".lz78";
+            tmp.readFile(arbolName);
+            tmp.compress(sFileOutLz78);
+            std::cout << "Se comprimio el archivo .arbolRTT (../destino)"<< std::endl;
+            std::remove(arbolName.c_str());
+
+        remove(this->temporalOcurrencias.c_str());
+        std::cout << "OK" << std::endl;
         remove(this->temporalOcurrencias.c_str());
         std::cout << "OK" << std::endl;
     }
@@ -307,11 +327,18 @@ int RTTgenerator::eliminarTodo(){
 }
 
 int RTTgenerator::recuperar(std::string frase, std::list<unsigned int> *lista){
+
     std::ifstream file;
+    lz78 tmp2;
+    string FileOutLz78 = arbolName + ".lz78";
+    tmp2.readCom(FileOutLz78);
+    tmp2.uncompress(arbolName);
+
     file.open(arbolName.c_str());
     if(!file.good()){
         return 0;
     }
+
     std::list<std::string> *palabras = new std::list<std::string>;
     Utils::splitString(frase," ",palabras);
     std::string palabra;
@@ -438,6 +465,7 @@ int RTTgenerator::recuperar(std::string frase, std::list<unsigned int> *lista){
     }
     delete listaMadre;
 
+    std::remove(arbolName.c_str());
     return 0;
 }
 

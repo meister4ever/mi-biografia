@@ -23,7 +23,7 @@ lz78::lz78(){
 }
 
 /**
- * Metodo para mostrar mensajes de error, y terminar la ejecuci&oacute;n
+ * Metodo para mostrar mensajes de error, y terminar la ejecucion
  * del programa.
  *
  * \param[in] msg Mensaje de error para mostrar.
@@ -186,7 +186,7 @@ void lz78::compress(string sFile){
 }
 
 /**
- * M&eacute;todo que lee el fichero con la informaci&oacute;n comprimida y
+ * Método que lee el fichero con la informacin comprimida y
  * rellena la tabla con los elementos codificados en formato LZ78.
  *
  * \param[in] sFile Fichero con la informaci&oacute; comprimida.
@@ -223,11 +223,11 @@ void lz78::readCom(string sFile) {
 }
 
 /**
- * M&eacute;todo que recupera una lista de bytes a partir del vector
- * donde est&aacute; almacenada la informaci&oacute; codificada.
+ * Metodo que recupera una lista de bytes a partir del vector
+ * donde este almacenada la informacion codificada.
  *
  * \param[out] cadena Lista de bytes obtenidos.
- * \param[out] i &Iacute;ndice de acceso al vector de informaci&oacute;.
+ * \param[out] indice de acceso al vector de informacion;.
  */
 void lz78::obtainElem(list<byte> &cadena, int &i){
   int indi = static_cast<int>(vTablaCod[i].first);
@@ -244,9 +244,9 @@ void lz78::obtainElem(list<byte> &cadena, int &i){
 }
 
 /**
- * M&eacute;todo que implementa el algoritmo de descopresi&oacute;n.
+ * Metodo que implementa el algoritmo de descopresion.
  *
- * \param[in] sFile Direcci&oacute;n donde se dejar&aacute; el fichero
+ * \param[in] sFile Direccin donde se dejar&aacute; el fichero
  * descomprimido.
  */
 void lz78::uncompress(string sFile){

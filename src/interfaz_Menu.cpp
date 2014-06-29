@@ -8,6 +8,7 @@
 #include "logica_Descargador.h"
 #include "lz77.h"
 #include "lz78.h"
+#include <ctime>
 
 using namespace std;
 
@@ -50,7 +51,7 @@ int Menu::imprimir()
     cout << "12. Borrar Titulo" << endl;
     cout << "13. Listar todos las fuentes indexadas" << endl;
     cout << "14. Ver Estructura" <<endl;
-    cout << "15. Comprimir" <<endl;
+    cout << "15. Estadistica de compresiones" <<endl;
     cout << "16. Salir" << endl<<endl;
     return 0;
 }
@@ -308,11 +309,36 @@ int Menu::ingresarOpcion(int opcion){
             lz78 tmp2;
             if (sFileOutLz77 == "") sFileOutLz77 = sFileIn + ".lz77";
             if (sFileOutLz78 == "") sFileOutLz78 = sFileIn + ".lz78";
-            tmp.compress(sFileIn,sFileOutLz77);
-            tmp2.readFile(sFileIn);
-            tmp2.compress(sFileOutLz78);
-            std::cout << "Se comprimio el archivo Estructura.txt (../destino)"<< std::endl;
 
+            std::clock_t    start;
+            start = std::clock();
+            tmp.compress(sFileIn,sFileOutLz77);
+            std::cout << "El lz77 tardo en comprimir: " << (std::clock() - start) / (double)(CLOCKS_PER_SEC / 1000) << " ms" << std::endl;
+
+            tmp2.readFile(sFileIn);
+
+            std::clock_t    start2;
+            start2 = std::clock();
+            tmp2.compress(sFileOutLz78);
+            std::cout << "El lz78 tardo en comprimir: " << (std::clock() - start2) / (double)(CLOCKS_PER_SEC / 1000) << " ms" << std::endl;
+
+
+            std::cout << "Se comprimio el archivo Estructura.txt en lz77 y lz78 (../destino)"<< std::endl;
+
+
+
+            ifstream archivo( sFileIn.c_str(), ios::binary | ios::ate);
+            ifstream comprimidolz77( sFileOutLz77.c_str(), ios::binary | ios::ate);
+            ifstream comprimidolz78( sFileOutLz78.c_str(), ios::binary | ios::ate);
+
+            int tamanioarchivo = archivo.tellg();
+            int tamaniocomprimidolz77 = comprimidolz77.tellg();
+            int tamaniocomprimidolz78 = comprimidolz78.tellg();
+            cout << "El archivo ocupa " << tamanioarchivo << "bytes" << std::endl;
+            cout << "El archivo comprimido por lz77 ocupa " << tamaniocomprimidolz77 << "bytes" << std::endl;
+            cout << "El archivo comprimido por lz78 ocupa " << tamaniocomprimidolz78 << "bytes" << std::endl;
+            cout << "El porcentaje que ocupa el archivo final comprimido por lz77 respecto del archivo inicial es: " << tamaniocomprimidolz77 *100 / tamanioarchivo << "%" << std::endl;
+            cout << "El porcentaje que ocupa el archivo final comprimido por lz78 respecto del archivo inicial es: " << tamaniocomprimidolz78 *100 / tamanioarchivo << "%" << std::endl;
             }
             break;
     }
