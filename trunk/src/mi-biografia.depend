@@ -2734,7 +2734,7 @@
 	"fisica_VarBuffer.h"
 	<string.h>
 
-1403989583 source:/home/sebastian/Escritorio/mi-biografia/src/interfaz_Menu.cpp
+1404009469 source:/home/sebastian/Escritorio/mi-biografia/src/interfaz_Menu.cpp
 	<iostream>
 	"interfaz_Menu.h"
 	"logica_Validator.h"
@@ -2743,7 +2743,9 @@
 	"logica_Utils.h"
 	"runtimeConfig.h"
 	"logica_Descargador.h"
+	"lz77.h"
 	"lz78.h"
+	<ctime>
 
 1402856801 /home/sebastian/Escritorio/mi-biografia/src/interfaz_Menu.h
 	<iostream>
@@ -2956,7 +2958,7 @@
 	<iostream>
 	<climits>
 
-1403900396 source:/home/sebastian/Escritorio/mi-biografia/src/logica_RTTgenerator.cpp
+1404007156 source:/home/sebastian/Escritorio/mi-biografia/src/logica_RTTgenerator.cpp
 	<string>
 	<fstream>
 	"logica_RTTgenerator.h"
@@ -2964,6 +2966,7 @@
 	<string.h>
 	"logica_SortExterno.h"
 	"logica_Utils.h"
+	"lz78.h"
 
 1403990416 source:/home/sebastian/Escritorio/mi-biografia/src/logica_Utils.cpp
 	<iostream>
@@ -3840,7 +3843,7 @@
 1403991764 /home/sebastian/Escritorio/mi-biografia/src/lz77.h
 	"tipos.h"
 
-1403991766 source:/home/sebastian/Escritorio/mi-biografia/src/lz78.cpp
+1404005556 source:/home/sebastian/Escritorio/mi-biografia/src/lz78.cpp
 	"lz78.h"
 	"logica_Utils.h"
 
